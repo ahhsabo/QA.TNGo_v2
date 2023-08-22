@@ -259,3 +259,9 @@ C:\Users\Admin\Documents\GitHub\QA.SportStore\obj\Debug\net7.0\refint\QA.SportSt
 C:\Users\Admin\Documents\GitHub\QA.SportStore\obj\Debug\net7.0\QA.SportStore.pdb
 C:\Users\Admin\Documents\GitHub\QA.SportStore\obj\Debug\net7.0\QA.SportStore.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\QA.SportStore\obj\Debug\net7.0\ref\QA.SportStore.dll
+C:\Users\Admin\Documents\GitHub\QA.SportStore\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Admin\Documents\GitHub\QA.SportStore\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Admin\Documents\GitHub\QA.SportStore\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Admin\Documents\GitHub\QA.SportStore\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Admin\Documents\GitHub\QA.SportStore\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Admin\Documents\GitHub\QA.SportStore\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

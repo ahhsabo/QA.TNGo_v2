@@ -13,14 +13,15 @@ namespace QA.SportStore.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(Login _login)
         {
-            return View();
-        }
+            var cookie = HttpContext.Request.Cookies["USER_LOGIN"];
 
-        public IActionResult Privacy()
-        {
-            return View();
+            if ((cookie != null))
+            {
+                return RedirectToAction("Index", "Category");
+            }
+            return RedirectToAction("Index", "Login");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

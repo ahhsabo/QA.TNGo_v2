@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using QA.SportStore.Models;
+
 namespace QA.SportStore
 {
     public class Program
@@ -5,7 +8,7 @@ namespace QA.SportStore
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
