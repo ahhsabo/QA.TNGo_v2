@@ -153,6 +153,13 @@ namespace QA.SportStore.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        // GET: Product/IndexAjax
+        public async Task<IActionResult> IndexAjax()
+        {
+            return _context.Product != null ?
+            View(await _context.Product.ToListAsync()) :
+            Problem("Entity set 'ApplicationContext.Product'  is null.");
+        }
 
         private bool CategoryExists(int id)
         {

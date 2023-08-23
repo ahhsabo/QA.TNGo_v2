@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AUU180yfymykYptHOji4PqS1iTtmSP5xqJVnOKCqh0w=",
+  "Hash": "qg3qRABu3+xp33v0Lje0HaQtYeV6KfdcRE7etDv4QFA=",
   "Source": "QA.SportStore",
   "BasePath": "_content/QA.SportStore",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\js\\main.js",
+      "SourceId": "QA.SportStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\",
+      "BasePath": "_content/QA.SportStore",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
       "Identity": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\js\\site.js",

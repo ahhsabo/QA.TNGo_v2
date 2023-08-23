@@ -1,0 +1,17 @@
+﻿@model IEnumerable<QA.SportStore.Models.Product>
+
+@{
+    ViewData["Title"] = "IndexAjax";
+}
+
+<h1>Index Ajax</h1>
+@foreach(var item in Model){
+<div class="product">
+    <img src="@item.Images" class="product-img-top" alt="">
+    <div class="product-body">
+        <h5 class="product-@item.CategoryID product-title">@item.Name</h5>
+        <h5 class="product-@item.CategoryID product-title">@item.Type</h5>
+        <h5 class="product-@item.CategoryID product-title">@item.Price</h5>
+    </div>
+</div>
+}

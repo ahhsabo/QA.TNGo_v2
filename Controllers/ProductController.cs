@@ -154,6 +154,13 @@ namespace QA.SportStore.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // GET: Product/IndexAjax
+        public async Task<IActionResult> IndexAjax()
+        {
+            return _context.Product != null ?
+            View(await _context.Product.ToListAsync()) :
+            Problem("Entity set 'ApplicationContext.Product'  is null.");
+        }
         private bool ProductExists(int id)
         {
           return (_context.Product?.Any(e => e.ID == id)).GetValueOrDefault();

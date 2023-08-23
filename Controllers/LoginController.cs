@@ -49,7 +49,6 @@ namespace QA.SportStore.Controllers
                 {
                     ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                     return RedirectToAction("Index", "Login");
-                    
                 }
 
             }
@@ -91,8 +90,9 @@ namespace QA.SportStore.Controllers
         {
             if (ModelState.IsValid)
             {
-                var passmd5 = GetMD5(login.Password);
-                login.Password = passmd5;
+                //Pass user nhập vào đăng kí
+                var passMD5 = GetMD5(login.Password);
+                login.Password = passMD5;
                 _context.Add(login);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

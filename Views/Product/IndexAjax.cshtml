@@ -1,0 +1,34 @@
+﻿@using Newtonsoft.Json;
+@model IEnumerable<QA.SportStore.Models.Product>
+
+@{
+
+    
+    ViewData["Title"] = "IndexAjax";
+}
+
+<h1>Product List</h1>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        var listImg = item.listImage;
+        var results = JsonConvert.DeserializeObject<List<Object>>(listImg);
+        <div class="col-3 p-3 product">
+            <div>
+                <img src="@item.Thumbnail" class="product-img-top" alt="" style="width:100%;height:150px;object-fit:cover;">
+            </div>
+            <div class="product-body">
+                <h5 class="product-@item.CategoryID product-title">@item.Name</h5>
+                <h5 class="product-@item.CategoryID product-title">@item.Type</h5>
+                <h5 class="product-@item.CategoryID product-title">@item.Price</h5>
+                <p>@item.Description</p>
+            </div>
+            <div>
+                @foreach(var img in results)
+                {
+                    <img src="@img.">
+                }
+            </div>
+        </div>
+    }
+</div>

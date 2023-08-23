@@ -12,9 +12,17 @@ namespace QA.SportStore.Models
         public int? Quantity { get; set; }
         public string? Price { get; set; }
         public string? Description { get; set; }
-        public string? Images { get; set; }
+        public List<Image>? listImage  { get; set; }
         public string? Sizes { get; set; }
         public string? Content { get; set; }
+        public string? Thumbnail { get; set;}
 
+
+        public class Image
+        {
+            public string? Url { get; set; }
+        }
     }
+
+    
 }
