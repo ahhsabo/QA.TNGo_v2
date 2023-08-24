@@ -1,17 +1,37 @@
-﻿@model IEnumerable<QA.SportStore.Models.Product>
+﻿@using Newtonsoft.Json;
+@model IEnumerable<QA.SportStore.Models.Product>
 
 @{
     ViewData["Title"] = "IndexAjax";
 }
 
-<h1>Index Ajax</h1>
-@foreach(var item in Model){
-<div class="product">
-    <img src="@item.Images" class="product-img-top" alt="">
-    <div class="product-body">
-        <h5 class="product-@item.CategoryID product-title">@item.Name</h5>
-        <h5 class="product-@item.CategoryID product-title">@item.Type</h5>
-        <h5 class="product-@item.CategoryID product-title">@item.Price</h5>
-    </div>
+<h1>Product List</h1>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        //string
+        var listImg = item?.Images;
+
+        var result = JsonConvert.DeserializeObject<List<String>>(listImg);
+
+
+        <div class="col-3 p-3 product" style="border:1px solid gray;">
+            <div>
+                <img src="@item?.Thumbnail" class="product-img-top" alt="" style="width:100%;height:150px;object-fit:cover;">
+            </div>
+            <div class="product-body" style="height:300px;">
+                <h5 class="product-@item.CategoryID product-title">@item.Name</h5>
+                <h5 class="product-@item.CategoryID product-title">@item.Type</h5>
+                <h5 class="product-@item.CategoryID product-title">@item.Price</h5>
+                <p>@item.Description</p>
+            </div>
+            <div>
+                @foreach (var img in result)
+                {
+                    <img src="@img" style="width:100%;height:150px;object-fit:cover;margin:5px 0;">
+                }
+            </div>
+
+        </div>
+    }
 </div>
-}

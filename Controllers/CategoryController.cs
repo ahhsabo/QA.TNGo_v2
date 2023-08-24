@@ -21,9 +21,9 @@ namespace QA.SportStore.Controllers
         // GET: Category
         public async Task<IActionResult> Index()
         {
-              return _context.Category != null ? 
-                          View(await _context.Category.ToListAsync()) :
-                          Problem("Entity set 'ApplicationContext.Category'  is null.");
+            return _context.Category != null ?
+                        View(await _context.Category.ToListAsync()) :
+                        Problem("Entity set 'ApplicationContext.Category'  is null.");
         }
 
         // GET: Category/Details/5
@@ -149,7 +149,7 @@ namespace QA.SportStore.Controllers
             {
                 _context.Category.Remove(category);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -163,7 +163,7 @@ namespace QA.SportStore.Controllers
 
         private bool CategoryExists(int id)
         {
-          return (_context.Category?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.Category?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

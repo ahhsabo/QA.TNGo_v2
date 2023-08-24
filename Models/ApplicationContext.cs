@@ -17,7 +17,7 @@ namespace QA.SportStore.Models
 
         }
 
-        public DbSet<Login> Login { get; set; }
+        public DbSet<QA.SportStore.Models.Login> Login { get; set; }
 
         public DbSet<QA.SportStore.Models.Product> Product { get; set; } = default!;
 

@@ -25,7 +25,7 @@ namespace QA.SportStore.Controllers
                           View(await _context.Product.ToListAsync()) :
                           Problem("Entity set 'ApplicationContext.Product'  is null.");
         }
-
+        
         // GET: Product/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -155,11 +155,21 @@ namespace QA.SportStore.Controllers
         }
 
         // GET: Product/IndexAjax
-        public async Task<IActionResult> IndexAjax()
+        public async Task<IActionResult> IndexAjax(int? id)
         {
-            return _context.Product != null ?
-            View(await _context.Product.ToListAsync()) :
-            Problem("Entity set 'ApplicationContext.Product'  is null.");
+            if (id == null || _context.Product == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Product
+                .FirstOrDefaultAsync(m => m.ID == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
         }
         private bool ProductExists(int id)
         {
