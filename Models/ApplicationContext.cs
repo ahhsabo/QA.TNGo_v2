@@ -20,5 +20,6 @@ namespace QA.SportStore.Models
         public DbSet<QA.SportStore.Models.Product> Product { get; set; }
 
         public DbSet<QA.SportStore.Models.Category> Category { get; set; }
+        public DbSet<QA.SportStore.Models.Image> Image { get; set; }
     }
 }

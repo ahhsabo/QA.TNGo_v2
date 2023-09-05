@@ -345,6 +345,34 @@
       "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\mediaUpload\\1693874434291.JPEG",
+      "PackagePath": "staticwebassets\\mediaUpload\\1693874434291.JPEG"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\mediaUpload\\368301646_2894442130691124_2054354437053824568_n.jpg",
+      "PackagePath": "staticwebassets\\mediaUpload\\368301646_2894442130691124_2054354437053824568_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\mediaUpload\\371368041_325255796735424_4609819492642592122_n.jpg",
+      "PackagePath": "staticwebassets\\mediaUpload\\371368041_325255796735424_4609819492642592122_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\mediaUpload\\372749846_605891611752447_3942405909801285768_n.jpg",
+      "PackagePath": "staticwebassets\\mediaUpload\\372749846_605891611752447_3942405909801285768_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\mediaUpload\\372835645_633417575550343_6658616964150224400_n.jpg",
+      "PackagePath": "staticwebassets\\mediaUpload\\372835645_633417575550343_6658616964150224400_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\mediaUpload\\z3894709396798_0e237f86189394abf1f6727218fb3992.jpg",
+      "PackagePath": "staticwebassets\\mediaUpload\\z3894709396798_0e237f86189394abf1f6727218fb3992.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\mediaUpload\\z4650913531618_59f09e84b66b5ace79f054db4f07d56f (1).jpg",
+      "PackagePath": "staticwebassets\\mediaUpload\\z4650913531618_59f09e84b66b5ace79f054db4f07d56f (1).jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\wwwroot\\scss\\bootstrap.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap.scss"
     },

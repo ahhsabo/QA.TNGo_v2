@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -25,7 +26,30 @@ namespace QA.SportStore.Controllers
                           View(await _context.Product.ToListAsync()) :
                           Problem("Entity set 'ApplicationContext.Product'  is null.");
         }
-        
+
+        // This method will upload the image and data to the folder and database
+        //[HttpPost]
+        //public ActionResult Index(HttpPostedFileBase file)
+        //{
+        //    //Getting File Details
+        //    string name = Path.GetFileName(file.FileName);
+        //    string path = "~/upload/" + name;
+
+        //    //Saving file to Folder
+        //    file.SaveAs(Server.MapPath(path));
+
+        //    //Saving data to database
+        //    Upload_Image_ConString connection = new Upload_Image_ConString();
+        //    connection.Image_Table.Add(new Image_Table
+        //    {
+        //        Title = name,
+        //        Image = path
+        //    });
+        //    connection.SaveChanges();
+        //    return RedirectToAction("Index");
+        //}
+
+
         // GET: Product/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -171,6 +195,10 @@ namespace QA.SportStore.Controllers
 
             return View(product);
         }
+
+
+
+
         private bool ProductExists(int id)
         {
           return (_context.Product?.Any(e => e.ID == id)).GetValueOrDefault();

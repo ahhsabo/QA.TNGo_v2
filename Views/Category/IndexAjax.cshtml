@@ -16,7 +16,6 @@
         var resultImg = JsonConvert.DeserializeObject<List<String>>(listImg);
         var listSize = item?.Sizes;
         var resultSize = JsonConvert.DeserializeObject<List<SizeItem>>(listSize);
-        int i;
         <div class="col-3 p-3 product" style="border:1px solid gray;">
             <div>
                 <img src="@item?.Thumbnail" class="product-img-top" alt="" style="width:100%;height:150px;object-fit:cover;">
@@ -32,7 +31,6 @@
                 {
                     <img src="@img" style="width:100%;height:150px;object-fit:cover;margin:5px 0;">
                 }
-
 
                 @foreach (var size in resultSize)
                 {

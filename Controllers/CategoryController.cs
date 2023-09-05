@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using QA.SportStore.Models;
@@ -12,10 +14,12 @@ namespace QA.SportStore.Controllers
     public class CategoryController : Controller
     {
         private readonly ApplicationContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public CategoryController(ApplicationContext context)
+        public CategoryController(ApplicationContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Category
@@ -55,7 +59,7 @@ namespace QA.SportStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Url")] Category category)
+        public async Task<IActionResult> Create([Bind("ID,Name,Url,Thumbnail")] Category category)
         {
             if (ModelState.IsValid)
             {
@@ -64,7 +68,37 @@ namespace QA.SportStore.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
+
         }
+
+        [HttpPost]
+        public IActionResult UploadImage([FromForm] IFormFile MyUploader)
+        {
+            if (MyUploader != null)
+            {
+                string time = DateTime.UtcNow.ToString();
+                time = time.Replace(" ", "-");
+                time = time.Replace(":", "-");
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "mediaUpload");
+                string filePath = Path.Combine(uploadsFolder, MyUploader.FileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    MyUploader.CopyTo(fileStream);
+                }
+                return new ObjectResult(new { status = "success", url = filePath });
+            }
+            return new ObjectResult(new { status = "error" });
+        }
+
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
+            services.AddControllersWithViews();
+            services.AddRazorPages();
+        }
+        //Ajax upload ảnh
+
 
         // GET: Category/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -160,6 +194,7 @@ namespace QA.SportStore.Controllers
             View(await _context.Product.ToListAsync()) :
             Problem("Entity set 'ApplicationContext.Product'  is null.");
         }
+
 
         private bool CategoryExists(int id)
         {

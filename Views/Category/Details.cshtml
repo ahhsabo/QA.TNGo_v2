@@ -22,6 +22,17 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Url)
         </dd>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Thumbnail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Thumbnail)
+        </dd>
+        <div>
+            <img src="@Model.Thumbnail" style="width:300px; height:150px; object-fit:cover;"/>
+        </div>
+
     </dl>
 </div>
 <div>

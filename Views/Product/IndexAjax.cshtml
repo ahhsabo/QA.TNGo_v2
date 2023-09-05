@@ -18,6 +18,15 @@
             <h5 class="product-@Html.DisplayFor(model => model.CategoryID) product-title">@Html.DisplayFor(model => model.Name)</h5>
             <h5 class="product-@Html.DisplayFor(model => model.CategoryID) product-title">@Html.DisplayFor(model => model.Type)</h5>
             <h5 class="product-@Html.DisplayFor(model => model.CategoryID) product-title">@Html.DisplayFor(model => model.Price)</h5>
+            <h5 class="product-@Html.DisplayFor(model => model.CategoryID) product-title">@Html.DisplayFor(model => model.Quantity)</h5>
+            @{
+                var listSize = Model?.Sizes;
+                var resultSize = JsonConvert.DeserializeObject<List<SizeItem>>(listSize);
+            }
+            @foreach (var size in resultSize)
+            {
+                <h1>@size.size</h1>
+            }
             <p>@Html.DisplayFor(model => model.Description)</p>
 
         </div>
