@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9ckL3Z4PENukkWcc37nZz5++8EkVm9Q7WWCkvqGPj73FXMN4ZKHMFSJt1LApsPt4kMKmFBt5TBmiJlISBBIiKA==",
+  "dgSpecHash": "SoBW/+B6LsnXE4XzO8PpzsYCC5AkX2EFvQguH0Wdx8P9T8Fltw2OFjbT0wtsifJhiQ6AXkeGd3cAJcJ9H8PGWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\QA.SportStore.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\QA.TNGo_v2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

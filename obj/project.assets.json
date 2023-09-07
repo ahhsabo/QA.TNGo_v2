@@ -12840,11 +12840,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\QA.SportStore.csproj",
-      "projectName": "QA.SportStore",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\QA.SportStore.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\QA.TNGo_v2.csproj",
+      "projectName": "QA.TNGo_v2",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\QA.TNGo_v2.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\QA.SportStore\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

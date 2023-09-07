@@ -79,17 +79,16 @@ namespace QA.SportStore.Controllers
                 string time = DateTime.UtcNow.ToString();
                 time = time.Replace(" ", "-");
                 time = time.Replace(":", "-");
-                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "mediaUpload");
-                string filePath = Path.Combine(uploadsFolder, MyUploader.FileName);
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                string uploadsFolder = Path.Combine("mediaUpload", MyUploader.FileName);
+                string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "mediaUpload", MyUploader.FileName);
+                using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     MyUploader.CopyTo(fileStream);
                 }
-                return new ObjectResult(new { status = "success", url = filePath });
+                return new ObjectResult(new { status = "success", url = uploadsFolder });
             }
             return new ObjectResult(new { status = "error" });
         }
-
 
         public void ConfigureServices(IServiceCollection services)
         {
