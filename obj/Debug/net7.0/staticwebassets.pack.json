@@ -21,16 +21,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\img\\use-1.png",
-      "PackagePath": "staticwebassets\\img\\use-1.png"
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\Rectangle 669.jpg",
+      "PackagePath": "staticwebassets\\image\\Rectangle 669.jpg"
     },
     {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\img\\use-2.png",
-      "PackagePath": "staticwebassets\\img\\use-2.png"
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\Rectangle 670.jpg",
+      "PackagePath": "staticwebassets\\image\\Rectangle 670.jpg"
     },
     {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\img\\use-3.png",
-      "PackagePath": "staticwebassets\\img\\use-3.png"
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\Rectangle 671.jpg",
+      "PackagePath": "staticwebassets\\image\\Rectangle 671.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\use-1.png",
+      "PackagePath": "staticwebassets\\image\\use-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\use-2.png",
+      "PackagePath": "staticwebassets\\image\\use-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\use-3.png",
+      "PackagePath": "staticwebassets\\image\\use-3.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\js\\main.js",

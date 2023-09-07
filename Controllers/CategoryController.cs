@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using QA.SportStore.Models;
+using QA.TNGo_v2.Models;
 
-namespace QA.SportStore.Controllers
+namespace QA.TNGo_v2.Controllers
 {
     public class CategoryController : Controller
     {

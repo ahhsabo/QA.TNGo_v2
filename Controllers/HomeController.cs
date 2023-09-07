@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using QA.SportStore.Models;
+using QA.TNGo_v2.Models;
 using System.Diagnostics;
 
-namespace QA.SportStore.Controllers
+namespace QA.TNGo_v2.Controllers
 {
     public class HomeController : Controller
     {

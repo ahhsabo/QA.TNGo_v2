@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using QA.SportStore.Models;
+using QA.TNGo_v2.Models;
 
-namespace QA.SportStore
+namespace QA.TNGo_v2
 {
     public class Program
     {

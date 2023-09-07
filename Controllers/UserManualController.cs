@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using QA.SportStore.Models;
+using QA.TNGo_v2.Models;
 
-namespace QA.SportStore.Controllers
+namespace QA.TNGo_v2.Controllers
 {
     public class UserManualController : Controller
     {
@@ -25,10 +25,5 @@ namespace QA.SportStore.Controllers
             return View();
         }
 
-
-        //private bool UserManualExists(int id)
-        //{
-        //  return (_context.UserManual?.Any(e => e.ID == id)).GetValueOrDefault();
-        //}
     }
 }

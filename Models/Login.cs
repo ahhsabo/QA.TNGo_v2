@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace QA.SportStore.Models
+namespace QA.TNGo_v2.Models
 {
     public class Login
     {

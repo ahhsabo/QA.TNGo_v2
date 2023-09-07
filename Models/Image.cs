@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Web;
 using System.Collections.Generic;
 
-namespace QA.SportStore.Models
+namespace QA.TNGo_v2.Models
 {
     public class Image
     {
