@@ -1,0 +1,97 @@
+﻿@* @using PT.UI.Models.API;
+@using System.Globalization;
+@using PT.UI.Models;
+
+
+@model APIWalletTransactions; *@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = null;
+    var totalPage = Math.Ceiling((double)Model.TotalRecord / 4);
+}
+
+<h4>Lịch sử giao dịch</h4>
+<div class="noTradebox" data-id="@Model.TotalRecord">
+    <span class="noTrade d-none" style="font-weight:600;font-size: 18px;font-style:italic;">
+        Hiện chưa có giao dịch nào được thực hiện !
+    </span>
+</div>
+
+@*Lịch sử giao dịch*@
+@* @foreach (var item in Model.Data)
+{
+    <div class="tradeHistory">
+        <table style="width:100%;border-radius:20px;padding:10px;">
+            <tr>
+                <th rowspan="3" style="width:16%;">
+                    @if (@item.paymentGroup == EPaymentGroup.PayooPay)
+                    {
+                        <img src="~/image/payoo-transaction-logo.png">
+                    }
+                    else if (@item.paymentGroup == EPaymentGroup.ZaloPay)
+                    {
+                        <img src="/image/zalopay-transaction-logo.png">
+                    }
+                    else if (@item.paymentGroup == EPaymentGroup.MomoPay)
+                    {
+                        <img src="/image/momo-transaction-logo.png">
+                    }
+                    else
+                    {
+                        <img src="/image/tngopay-transaction.png">
+                    }
+                </th>
+                <th colspan="2"><h5 style="margin-bottom:0;">@item.type.GetDisplayName()</h5></th>
+            </tr>
+            <tr>
+
+                <td style="width:40%;">
+                    @if (@item.status == EWalletTransactionStatus.Cancel)
+                    {
+                        <p style="color:red;">@item.status.GetDisplayName()</p>
+                    }
+                    else if (@item.status == EWalletTransactionStatus.Done)
+                    {
+                        <p style="color:#018101;">@item.status.GetDisplayName()</p>
+                    }
+                    else
+                    {
+                        <p style="color:gray;">@item.status.GetDisplayName()</p>
+                    }
+                    <p>Tài khoản chính</p>
+                </td>
+                <td style="display: flex;flex-direction: column;align-items: flex-end;">
+                    <p style="color:dimgray;">
+                        @item.createdDate.ToString("t",CultureInfo.CreateSpecificCulture("es-ES")), @item.createdDate.DateToString()
+                    </p>
+
+                    @if (item.type == 0 || @item.type.ToString() == "3" || @item.type.ToString() == "4" || @item.type.ToString() == "5" || @item.type.ToString() == "7" || @item.type.ToString() == "8" || @item.type.ToString() == "10" || @item.type.ToString() == "13" || @item.type.ToString() == "15" || @item.type.ToString() == "16" || @item.type.ToString() == "21")
+                    {
+                        <p style="color:#005EC5;font-weight: 800;">
+                            <span>+</span>@(double.Parse(@item.totalAmount.ToString()).ToString("#,###", CultureInfo.GetCultureInfo("vi-VN").NumberFormat))
+                        </p>
+                    }
+                    else
+                    {
+                        <p style="color:red;font-weight: 800;">
+                            <span>-</span>@(double.Parse(@item.totalAmount.ToString()).ToString("#,###", CultureInfo.GetCultureInfo("vi-VN").NumberFormat))
+                        </p>
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
+} *@
+@*Pagination*@
+<div class="buttons_added" id="buttons_added" style="margin-top: 20px;">
+    <a class="minus is-form mb-2 btn btn-outline-primary d-inline-block border-0">
+        <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <input id="input-qty" class="mb-2 form-control d-inline-block" style="width:20%;text-align: center;margin:0 5px;background-color:white;font-weight: 700;" max="@totalPage" min="1" name="" type="number" value="@Model.page" disabled>
+    <a class="plus is-form mb-2 btn btn-outline-primary d-inline-block border-0">
+        <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+    </a>
+</div>
+
+

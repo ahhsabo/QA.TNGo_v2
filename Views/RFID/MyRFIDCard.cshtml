@@ -1,0 +1,150 @@
+﻿@* @model IEnumerable<QA.SportStore.Models.Price> *@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<body id="Body">
+    <div class="body">
+        <div class="banner">
+            <img src="/image/banner-user-manual.jpg" class="img-fluid" />
+            <h1 class="banner-text-centered">Thẻ RFID định danh</h1>
+        </div>
+        <div id="mobile-rfid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 mt-4">
+                        <h4 class="fw-bold">Thẻ RideUp</h4>
+
+                        <div class="px-2">
+                            <img src="/image/rfid-rideup.jpg" class="w-100 mb-4" />
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Phí mở thẻ 20.000đ, miễn phí mở thẻ lần đầu</div>
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Số dư tài khoản chính tối thiểu <span class="text-danger fw-bold">100.000 điểm</span>, tặng ngay <span class="text-success fw-bold">10.000</span> điểm khuyến mãi đạp xe</div>
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Cho phép mở tối đa <span class="text-success fw-bold">03</span> xe cùng lúc</div>
+
+                            <a href="/rfid/BuyRFIDCard" class="btn btn-primary w-100 mx-auto rounded mt-3 btn-buynow d-none">Mua ngay</a>
+                            <button id="btn-modal-login" class="btn btn-primary btn-lg w-100 mx-auto rounded btn-login-tobuy d-none" data-action="login">Đăng nhập để mua thẻ</button>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 mt-4">
+                        <h4 class="fw-bold">Thẻ Premium</h4>
+
+                        <div class="px-2">
+                            <img src="/image/rfid-premium.jpg" class="w-100 mb-4" />
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Phí mở thẻ 20.000đ, miễn phí mở thẻ lần đầu</div>
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Số dư tài khoản chính tối thiểu <span class="text-danger fw-bold">1.000.000 điểm</span>, tặng ngay <span class="text-success fw-bold">50.000</span> điểm khuyến mãi đạp xe</div>
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Cho phép mở tối đa <span class="text-success fw-bold">10</span> xe cùng lúc</div>
+
+                            <a href="/rfid/BuyRFIDCard" class="btn btn-primary w-100 mx-auto rounded mt-3 btn-buynow d-none">Mua ngay</a>
+                            <button id="btn-modal-login" class="btn btn-primary btn-lg w-100 mx-auto rounded btn-login-tobuy d-none" data-action="login">Đăng nhập để mua thẻ</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 mt-4">
+                        <h4 class="fw-bold">Thẻ VIP</h4>
+
+                        <div class="px-2">
+                            <img src="/image/rfid-vip.jpg" class="w-100 mb-4" />
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Phí mở thẻ 20.000đ, miễn phí mở thẻ lần đầu</div>
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Số dư tài khoản chính tối thiểu <span class="text-danger fw-bold">5.000.000 điểm</span>, tặng ngay <span class="text-success fw-bold">100.000</span> điểm khuyến mãi đạp xe</div>
+                            <div class="mb-2"><i class="fa fa-check text-success" aria-hidden="true"></i> Cho phép mở <span class="text-success fw-bold">không giới hạn</span> số lượng xe</div>
+
+                            <a href="/rfid/BuyRFIDCard" class="btn btn-primary w-100 mx-auto rounded mt-3 btn-buynow d-none">Mua ngay</a>
+                            <button id="btn-modal-login" class="btn btn-primary btn-lg w-100 mx-auto rounded btn-login-tobuy d-none" data-action="login">Đăng nhập để mua thẻ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="support">
+            <div class="container" style="text-align: justify;">
+                <div class="row mb-2 mt-5">
+                    <header>
+                        <h2><b>Chính sách sử dụng thẻ RFID</b></h2>
+                    </header>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-sm-7">
+                        <div id="terms-summary" class="mb-5">
+                            <p>Thẻ RFID định danh được liên kết với tài khoản TNGo cho phép khách hàng thuê xe mà không cần sử dụng ứng dụng mobile hay kết nối internet.</p>
+                            <p>Một tài khoản có thể mở không giới hạn thẻ RFID, hãy mở thẻ ngay cho người thân để sử dụng dịch vụ xe đạp công cộng một cách tiện lợi và nhanh chóng.</p>
+                        </div>
+                        <div id="terms-list">
+
+                            <div class="terms-block">
+                                <div class="manual-panel">
+                                    <div class="manual-panel-title">Hướng dẫn mở thẻ</div>
+                                    <div class="manual-panel-square"></div>
+                                    <div class="manual-panel-number">1</div>
+                                </div>
+
+                                <div class="manual-content">
+                                    <div class="mb-1">- Khách hàng dùng chức năng mở thẻ trên ứng dụng mobile TNGo hoặc trực tiếp trên website. Vui lòng <span class="fw-bold">Đăng nhập</span> và chọn chức năng <span class="fw-bold">"Thẻ của tôi"</span> để bắt đầu mở thẻ.</div>
+                                    <div class="mb-1">- Tài khoản cần <span class="fw-bold">xác thực</span> để có thể sử dụng chức năng mở thẻ.</div>
+                                    <div class="mb-1">- Một tài khoản có thể mở <span class="fw-bold">không giới hạn</span> thẻ RFID.</div>
+                                    <div class="mb-1">- Khách hàng có thể lựa chọn tùy ý tên in trên thẻ và mẫu thiết kế thẻ.</div>
+                                    <div class="mb-1">- Thời gian giao thẻ 07-14 ngày kể từ ngày đăng kí mở thẻ.</div>
+                                    <div class="mb-1">- Phí làm thẻ <span class="fw-bold">không bao gồm phí vận chuyển giao thẻ</span>, nhân viên CSKH sẽ kiểm tra phí vận chuyển và liên lạc tới khách hàng để xác nhận phí vận chuyển trước khi phát hành thẻ.</div>
+                                </div>
+                            </div>
+
+                            <div class="terms-block">
+                                <div class="manual-panel">
+                                    <div class="manual-panel-title">Hướng dẫn sử dụng</div>
+                                    <div class="manual-panel-square"></div>
+                                    <div class="manual-panel-number">2</div>
+                                </div>
+
+                                <div class="manual-content">
+                                    <div class="mb-1">- <span class="text-danger">Kích hoạt thẻ: </span> Khi nhận được thẻ, khách hàng cần <span class="fw-bold">kích hoạt</span> thẻ trên ứng dụng mobile hoặc trên website tngo.vn để bắt đầu sử dụng.</div>
+                                    <div class="mb-1">- <span class="text-danger">Mở khóa: </span> Chạm thẻ vào <span class="fw-bold">biểu tượng RFID trên khóa</span> (có âm thanh báo hiệu) để mở khóa xe.</div>
+                                    <div class="mb-1">- <span class="text-danger">Trả xe: </span> Đỗ xe trong trạm, <span class="fw-bold">đóng khóa xe</span>, chạm thẻ vào <span class="fw-bold">biểu tượng RFID trên khóa</span> (có âm thanh báo hiệu) trong vòng <span class="fw-bold">30 giây</span> sau khi đóng khóa xe để kết thúc chuyến đi.</div>
+                                    <div class="mb-1">- <span class="text-danger">Kiểm tra số dư: </span> Khách hàng có thể kiểm tra số dư tài khoản (liên kết với thẻ) trên ứng dụng mobile hoặc trên website tngo.vn.</div>
+                                </div>
+                            </div>
+
+                            <div class="terms-block">
+                                <div class="manual-panel">
+                                    <div class="manual-panel-title">Phí dịch vụ thẻ</div>
+                                    <div class="manual-panel-square"></div>
+                                    <div class="manual-panel-number">3</div>
+                                </div>
+
+                                <div class="manual-content">
+                                    <div class="mb-1">- Phí dịch vụ thẻ là <span class="text-danger">5.000 điểm/thẻ/tháng</span>, trừ vào <span class="fw-bold">tài khoản chính</span> và trừ vào ngày <strong>01</strong> hàng tháng.</div>
+                                    <div class="mb-1">- Phí dịch vụ được áp dụng kể từ khi khách hàng kích hoạt thẻ</div>
+                                    <div class="mb-1">- Nếu tài khoản quý khách không đủ để duy trì phi dịch vụ, thẻ sẽ <span class="fw-bold">dừng hoạt động</span>. Khi khách hàng nạp tiền vào tài khoản TNGo, hệ thống sẽ tự động trừ phí và mở lại thẻ.</div>
+                                    <div class="mb-1">- Khách hàng có thể hủy thẻ <span class="fw-bold">miễn phí</span>. Đối với thẻ đầu tiên (được miễn phí làm thẻ), khách hàng hủy thẻ trong vòng 04 tháng đầu sau khi kích hoạt sẽ bị trừ 20.000đ phí làm thẻ.</div>
+                                </div>
+                            </div>
+
+                            <div class="terms-block">
+                                <div class="manual-panel">
+                                    <div class="manual-panel-title">Phí thuê xe</div>
+                                    <div class="manual-panel-square"></div>
+                                    <div class="manual-panel-number">4</div>
+                                </div>
+
+                                <div class="manual-content">
+                                    <div class="mb-1">- Áp dụng giá vé (vé lượt, vé ngày, vé tháng, vé trả trước) và các tính năng vé nhóm tương tự như dùng trên ứng dụng mobile.</div>
+                                    <div class="mb-1">- Tiền phí thuê xe được trừ vào tài khoản TNGo của chủ thẻ (tài khoản mở thẻ).</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="container">
+                            <img src="/image/Rectangle 669.jpg" class="img-fluid mx-auto d-block mb-5" style="width:90%" />
+                            <img src="/image/Rectangle 670.jpg" class="img-fluid mx-auto d-block mb-5" style="width:90%" />
+                            <img src="/image/Rectangle 671.jpg" class="img-fluid mx-auto d-block mb-5" style="width:90%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

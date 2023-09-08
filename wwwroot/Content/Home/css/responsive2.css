@@ -1,0 +1,252 @@
+@media only screen and (max-width: 1024px){
+	.fix-page .content {padding-top: 0;}
+	.common-diseases .swiper-wrapper {
+		display: inline-block;
+    	width: 100%;
+    	text-align: center;
+	}
+	.common-diseases .swiper-wrapper .swiper-slide {
+		width: 33.33% !important;
+    	float: left;
+    	padding: 10px;
+	}
+	.swiper-button-next , .swiper-button-prev {display: none;}
+	.fix-page .row .col-md-8.col-xs-12.col-sm-12 {width: 100%;}
+	/*----------------csyt----------------*/
+	.banner-child img {
+		height: 190px;
+	}
+	.filter-box {
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	    width: 80%;
+	    max-width: 400px;
+	    z-index: 99999999999999;
+	    padding: 0;
+	    height: 100%;
+	    overflow: auto;
+	    display: none;
+	}
+	.filter-box.active {
+		display: block;
+	}
+	.icon-cs {display: block;}
+	.icon-cs .text-filter {color: #0081b3; font-size: 16px; }	
+	.content-data .col-md-8.col-xs-12.col-sm-12 {width: 100%;}
+	.icon-cs.filter-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		width: 100%;
+		margin: 0;
+		padding: 10px 0;
+		z-index: 999;
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+	}
+	/*--------------loaibenh--------------*/
+	.diseases-search .diseases-search-list .diseases-search-list-item {
+	    width: 50%;
+	    margin-bottom: 20px;
+	    float: left;
+	    margin-right: 0;
+	}
+	.diseases-search-list-item a {
+	    padding-left: 50%;
+	    display: inline-block;
+	    width: 100%;
+	}
+	.diseases-search-list-item img {
+		width: 90%;
+		display: inline-block;
+		float: left;
+    	margin-left: -100%;
+	}
+	.diseases-search-list-item div:nth-child(2) {
+		display: inline-block;
+	}
+	.diseases-search .diseases-search-list .diseases-search-list-item:nth-child(5n) {margin-right: 0;}
+}
+@media only screen and (max-width: 768px){
+	.banner-child img {
+		height: 150px;
+	}	
+	.banner-child .banner-text-h1 h1 {
+		font-size: 30px;
+	}
+	.content-data .box-template.hospital-profile .col-sm-3 {
+		width: 50%;
+	}
+	.content-data .box-template.hospital-profile .avt-hospital-profile {
+		max-width: 100%;
+	}
+	.content-data .box-template.hospital-profile .col-sm-9 {
+		width: 50%;
+	}
+	.content-data .profile .function .cmt-like {display: none;}
+	.content-data .hospital-profile .profile > div.function div:nth-child(2) {
+		width: 100%;
+	}
+	.content-data .hospital-profile .profile > div:nth-of-type(1) {
+		display: inline-block;
+	}
+
+	.banner-register img {
+		height: 150px;
+	}	
+	
+	section.register-account .box-type-account {
+		height: 80px;
+	}
+	section.register-account .box-type-account img {
+		width: 40px;
+    	height: 40px;
+	}
+	/*---------------loai benh---------*/
+	.diseases-search .diseases-search-list .diseases-search-list-item:nth-child(3n) {
+    	margin-right: 0px;
+	}
+}
+@media only screen and (max-width: 736px){
+	
+}
+@media only screen and (max-width: 667px){
+	.content-data .hospital-profile .profile h5 {
+		text-align: left;
+	}
+	section.register-account .box-type-account {
+	    height: 60px;
+	}
+	section.register-account .box-type-account img {
+	    width: 30px;
+	    height: 30px;
+	}
+}
+@media only screen and (max-width: 601px){
+	
+}
+@media only screen and (max-width: 568px){
+	.common-diseases .swiper-wrapper .swiper-slide {
+    	padding: 5px;
+	}
+	.banner-register img {
+	    height: 120px;
+	}
+	.banner-register .benefit-register-banner-text {
+		font-size: 16px;
+	}
+	.banner-register .benefit-register-banner-text br:first-child {display: none;}
+	/*--------------loai benh-----------------*/
+	.diseases-search .diseases-search-list .diseases-search-list-item {
+    	width: 100%;
+	}
+}
+@media only screen and (max-width: 480px){
+	.common-diseases .swiper-wrapper .swiper-slide {
+    	padding: 4px;
+	}
+	.banner-child img {
+    	height: 120px;
+	}
+	.banner-child .banner-text-h1 h1 {
+	    font-size: 25px;
+	}
+	.filter-box {
+		max-width: 350px;
+	} 
+	.content-data .hospital-profile .profile > div.text {
+    	display: none;
+	}
+	/*---------------loai benh----------------*/
+	.diseases-search {
+		padding: 30px 0;
+	}
+}
+@media only screen and (max-width: 414px){
+	.common-diseases .col-md-12.col-xs-12.col-sm-12 {
+		padding-left: 5px;
+    	padding-right: 5px;
+	}
+	.common-diseases .swiper-wrapper .swiper-slide:nth-child(3n+1) {
+    	clear: both;
+	}
+
+	.banner-child img {
+	    height: 100px;
+	}
+	.banner-child .banner-text-h1 h1 {
+	    font-size: 22px;
+	}
+	.content-data .box-template.hospital-profile {
+	    padding: 15px;
+	}
+	.content-data .hospital-profile .profile > div img {display: none;}
+	.content-data .box-template.hospital-profile .col-sm-3 {
+	    padding: 0 5px;
+	}
+	.content-data .box-template.hospital-profile .col-sm-9 {
+	    padding: 0 5px;
+	}
+	.content-data .hospital-profile .profile > div.function div:nth-child(2) {display: inline-block;}
+	.content-data .hospital-profile .profile > div.function div:nth-child(2) a {
+		width: 100%;
+		display: inline-block;
+	}
+	.content-data .box-template.hospital-profile .row {
+    	display: flex;
+	}
+	.content-data .box-template.hospital-profile .avt-hospital-profile {
+	    height: 100%;
+	    max-height: inherit;
+	}
+	.content-data .hospital-profile .avt-hospital-profile img {
+	    height: 100%;
+	}
+	section.register-account .box-type-account {
+	    height: 50px;
+	}
+	section.register-account .box-type-account img {
+	    width: 25px;
+	    height: 25px;
+	}
+	section.register-account .box-type-account > div {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 384px){
+	.content-data .hospital-profile .profile div:nth-child(4) span {
+		width: 100%;
+	}
+	.banner-register img {
+    	height: 100px;
+	}
+	.banner-register .benefit-register-banner-text {
+	    font-size: 14px;
+	}
+}
+@media only screen and (max-width: 375px){
+	
+}
+@media only screen and (max-width: 320px){
+	.section.section-destination.grid .item:nth-child(4n+1) {
+	    clear: both;
+	}
+	.banner-child img {
+	    height: 80px;
+	}
+	.banner-child .banner-text-h1 h1 {
+	    font-size: 20px;
+	}
+	.content-data .hospital-profile .profile h5 {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.content-data .hospital-profile .profile > div:nth-of-type(1) {display: none;}
+	.content-data .hospital-profile .profile > div:nth-child(3) {display: none;}
+	.content-data .hospital-profile .profile .job {display: none;}
+	
+	.register-account h2.text-center {font-size: 18px;}
+
+}

@@ -25,5 +25,10 @@ namespace QA.TNGo_v2.Controllers
             return View();
         }
 
+        public IActionResult MyRFIDCard()
+        {
+            return View();
+        }
+
     }
 }

@@ -1,0 +1,69 @@
+/*Strip the ul of padding and list styling*/
+
+/*Style 'show menu' label button and hide it by default*/
+#menu-mobile {
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    /*padding: 10px 0;*/
+    display: none;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 768px) {
+    /*Make dropdown links appear inline*/
+    #menu-mobile ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    #menu-mobile li {
+        margin-bottom: 1px;
+    }
+
+    /*Display 'show menu' link*/
+    #menu-mobile {
+        display: block;
+    }
+
+        #menu-mobile .menu-active {
+            background-color: #0081b3;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 10px;
+            /*min-width: 100px;*/
+            margin-left: 10px;
+        }
+
+        #menu-mobile ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+        }
+
+        /*Create a horizontal list with spacing*/
+        #menu-mobile li {
+            display: inline-block;
+            float: left;
+            /* margin-right: 1px; */
+             width: 24%; 
+            min-width: 90px;
+            /*padding-left: 10px;*/
+        }
+
+            /*Style for menu links*/
+            #menu-mobile li a {
+                display: block;
+                /*min-width: 100px;*/
+                /* height: 50px; */
+                /* text-align: center; */
+                line-height: 50px;
+                /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+                color: #fff;
+                /* text-decoration: none; */
+                /* width: 20%; */
+            }
+}

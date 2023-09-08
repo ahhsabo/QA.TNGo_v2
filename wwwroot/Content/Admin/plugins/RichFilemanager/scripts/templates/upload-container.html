@@ -1,0 +1,32 @@
+﻿<script type="text/x-tmpl" id="tmpl-fileupload-container">
+    <div class="fm-fileupload-container">
+        <h2>{%=o.folder%}</h2>
+        <input id="fileupload" type="file" name="files[]" multiple style="display: none" />
+        <div class="dropzone-wrapper">
+            <div class="dropzone">
+                <div class="default-message">
+                    <span>{%=o.lang.upload_dropzone_message%}</span>
+                </div>
+            </div>
+        </div>
+        <div id="total-progress">
+            <div style="width:0%;" class="progress-bar"></div>
+        </div>
+        <select class="chon-tile" id="zipSelect">
+            <option value="0">Chọn không nén</option>
+            <option value="50">Chọn nén chiều rộng lớn nhất 50px</option>
+            <option value="100">Chọn nén chiều rộng lớn nhất 100px</option>
+            <option value="200">Chọn nén chiều rộng lớn nhất 200px</option>
+            <option value="300" selected>Chọn nén chiều rộng lớn nhất 300px</option>
+            <option value="400">Chọn nén chiều rộng lớn nhất 400px</option>
+            <option value="500">Chọn nén chiều rộng lớn nhất 500px</option>
+            <option value="600">Chọn nén chiều rộng lớn nhất 600px</option>
+            <option value="700">Chọn nén chiều rộng lớn nhất 700px</option>
+            <option value="1000">Chọn nén chiều rộng xuống 1000px</option>
+            <option value="1200">Chọn nén chiều rộng xuống 1200px</option>
+            <option value="1366">Chọn nén chiều rộng xuống 1366px</option>
+            <option value="1920">Chọn nén chiều rộng xuống 1920px</option>
+        </select>
+        <div class="prompt-info">Chọn tối đa 5 tệp tin để tải lên, nén tệp chỉ có tác dụng là tệp hình ảnh</div>
+    </div>
+</script>

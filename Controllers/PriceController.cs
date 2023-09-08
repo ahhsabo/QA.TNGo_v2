@@ -24,6 +24,9 @@ namespace QA.TNGo_v2.Controllers
         {
             return View();
         }
-
+        public IActionResult BuyTicket()
+        {
+            return View();
+        }
     }
 }

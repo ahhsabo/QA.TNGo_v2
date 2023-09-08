@@ -1,0 +1,107 @@
+.time-wrap.row{
+	margin: 0 -2.5px 25px -2.5px;
+}
+.time-wrap.row .col-md-3{
+	padding: 0 2.5px;
+	margin-bottom: 5px;
+}
+.time-wrap .item{
+	font-weight: 700;
+	text-align: center;
+	color: #000;
+	background-color: #cee7e8;
+	border-radius: 5px;
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+}
+.time-wrap .item.disabled{
+	background-color: #bcbec0;
+	cursor: not-allowed;
+}
+.time-wrap .item.active{
+	background-color: #25a8e0;
+	color: #fff;
+}
+.time-wrap .item.full:before{
+	content: "";
+	background-image: url("../image/clock.png");
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 12px;
+	height: 11px;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.date-wrap{
+	margin-bottom: 20px;
+}
+.datetime-wrap .note{
+	padding-left: 15px;
+	background-image: url("../image/clock.png");
+	background-position: center left;
+	background-repeat: no-repeat;
+	color: #f30;
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.show-date{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #333;
+	position: relative;
+}
+.show-date .prev{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 28px;
+	color: #000;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #a7a9ac;
+	cursor: pointer;
+}
+.show-date .next{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 28px;
+	color: #000;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #a7a9ac;
+	cursor: pointer;
+}
+.show-date .choose-date{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.ui-widget.ui-widget-content{
+	display: block !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important; 
+}
+#datepicker{
+	visibility: hidden !important;
+	opacity: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important; 
+}

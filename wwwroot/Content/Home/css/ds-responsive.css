@@ -1,0 +1,163 @@
+
+@media only screen and (max-width: 1024px){
+	.calendar-list a.book-calendar{margin-top: 0;}
+	.calendar-list a.book-calendar:first-child {padding: 0 28px; margin-bottom: 10px;}
+	.box-template.examination-schedule.mobile, .schedule-moblie {display: block;}
+	.box-template.examination-schedule-desk, .schedule-desk {display: none;}
+	.content__appointment {padding: 0 100px;}
+	.content__appointment .Successful {padding: 5px 25px 30px;}
+	.Successful .Success label {margin-top: 5px;}
+	.bgr-doctor .banner img {height: 250px !important;}	
+	.bgr-doctor .banner h1 {font-size: 30px;    margin: 0;}
+	#form-info .form-group label {width: 30%;}
+	#form-info .form-group input.form-ct, #form-info .form-group select.state { width: 69%;padding: 10px 0 0;}
+	#form-info .form-group label.cnt {width: 14% !important;}
+	#form-info .form-group textarea.txtarea {width: 85%;}
+	.content_contact .login-cnt {text-align: center;}
+	.info-company .add-company {text-align: center;}
+	.info-company .add-company a.logo-add {float: none;margin-bottom: 10px;display: block;}
+	.content_contact {margin-bottom: 30px;}
+	.bgr-doctor .content-right {margin-bottom: 20px;}
+	.information .login-info button.btn-gd { width: 212px;margin-left: 20px;}
+	.share-url {display: inherit;text-align: center;}
+	.share-url .form-group { width: 100%;margin-bottom: 25px;}
+	.share-url ul { width: 100%;}
+	.share-url .form-group input[type="name"] { width: 84%;}
+}
+@media only screen and (max-width: 768px){	
+	.management-top .info-mng {display: inline-block;}
+	.management-top .comment-mng {text-align: center;}
+	.content-doctor {padding-bottom: 25px;}
+	.info-hospital .calendar-list {text-align: center;margin-top: 25px;display: inline-block;width: 100%;}
+	.content__appointment {padding: 0 50px;}
+	.patient-records .list-patient li {margin-right: 8px;margin-bottom: 5px;}
+	.bgr-doctor .banner img {height: 200px !important;}
+	#form-info .form-group label {width: 100%;}
+	#form-info .form-group input.form-ct, #form-info .form-group select.state { width: 100%;}
+	#form-info .form-group label.cnt {width: 100% !important;}
+	#form-info .form-group textarea.txtarea {width: 100%;}
+	.header-top ul.file-list {white-space: nowrap;overflow-x: auto;overflow-y: visible;width: 100%;}
+	.header-top ul.file-list li {margin-right: 10px;display: inline-block;float: inherit;}
+	.content-tab td span:after {width: 7px;height: 7px;margin-left: 0;margin-top: -3px;}
+	.user-bar p.basic{display: none;}
+	h1.header___h1 {display: none;}
+	.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+    -webkit-overflow-scrolling: touch;
+	}
+	.box-template.patient-records {padding: 15px;}
+	.patient-records .list-patient {padding: 10px;}
+	.cate__hpt {padding: 15px 0 5px;}
+	#dt_love a.avt-dt {text-align: left;}
+	.info-kb a.name-dise{margin-top: 10px;}
+}
+@media only screen and (max-width: 736px){
+	.info-hospital .avt-hpt {margin-top: 25px;}
+	.info-hospital .calendar-list {margin-bottom: 25px;width: inherit;}	
+	.content__appointment {padding: 0;}	
+	.info-company .add-company {margin-bottom: 20px;text-align: left;}
+	#doctor-07 .procedure {margin-bottom: 35px;}
+	.info-dt .remove-love{top: -27%;}
+	.banner-sale span.day_sale {bottom: 10px;}
+	.banner-sale h2.heder__h2 {font-size: 42px;}
+}
+@media only screen and (max-width: 668px){}
+@media only screen and (max-width: 601px){	
+	.info-hospital .add-hospital {float: inherit;margin-top: 20px;}
+	.info-hospital .calendar-list {width: 100%;margin-bottom:0;}
+	.content__appointment a.btn-xnd {padding: 15px 100px;}
+	.tab-tifi {white-space: nowrap;max-width: 100%;overflow-x: auto;}
+	.notification .tablink {float: inherit;width: auto;}
+	.notification .list-contenttab span.time-day, 
+	.notification .list-contenttab-one span.time-day {float: initial;display: block; margin-top: 5px;}
+	.share-url ul li {width: 132px;margin: 0 5px;}	
+	.banner-sale span.day_sale {bottom: 8px;font-size: 12px;}
+	.banner-sale h2.heder__h2 {font-size: 36px;top: 8%;}
+	.share-url .form-group input[type="name"] {width: 75%;}
+}
+@media only screen and (max-width: 568px){
+	.management-top .info-mng ul.address {padding-left: 0;}
+	.management-top .info-mng ul.address li.active {margin-left: 0;}
+	.content-doctor .specialist-tag a {padding: 10px;}
+}
+@media only screen and (max-width: 480px){
+	#doctor-01 .management-top{display: inline-block;}
+	.management-top .info-mng {text-align: center;}
+	#doctor-02 .info-hospital {margin-top: 0;}
+	#doctor-02 .banner-page {display: none;}
+	.info-hospital .avt-hpt {text-align: center;width: 100%;}
+	.info-hospital .add-hospital {text-align: center;}
+	.info-hospital .calendar-list {margin:0;}
+	.introduce ul.introduce-list {padding: 0 20px;}
+	.info-doctor .list__avt .timeday a {width: 85px; margin-right: 10px;}
+	.Successful .Success label span {width: 80px;height: 80px;}
+	.Successful .Success label span:after {right: 30px;top: calc(50% - 20px);width: 20px;height: 33px;}
+	.Successful .payment-term h5.title-h5 {font-size: 18px;}
+	.bgr-doctor .banner h1 {font-size: 26px;}
+	.content_contact .login-cnt button.btn-gd {padding: 15px 100px;}
+	.content_contact .contact-06, .content_contact .info-company { padding: 20px 15px;}	
+	.procedure .steps ul.Nophoto {column-count: 1;}
+	.procedure .steps ul.Nophoto li {margin-bottom: 15px;}
+	.content-tab .sum-pp li {margin-right: 10px;}
+	.content-right .list-file a.addfile {padding: 10px;}
+	.information .login-info button.btn-gd {width: 150px;}
+	.information #form-info .form-group select.day {width: 20%;}	
+	.info-dt .remove-love a.rm-love:first-child {margin-right: 0px;padding: 5px;}
+	.info-kb .day-code a.rm-day {margin-right: 0;}
+	.info-kb .day-code {top:-20%;}
+	#exampleModal .btn.btn-secon-cl , #exampleModal .btn.btn-save {width: 100px;}
+	.share-url .form-group input[type="name"] {width: 70%;}
+	.share-url ul li {width: 110px;}
+	.search-right input.form-control {width: 200px;}
+}
+@media only screen and (max-width: 414px){
+	.management-top .info-mng .desc h3 {display:block;}
+	.nav-info ul li a {padding: 9px;font-size: 14px;margin-right: 1px;}
+	.content-doctor .specialist-tag a {height: 40px;width: 200px;text-align: center;margin-bottom: 10px;}
+	.calendar-list a.book-calendar:first-child {padding: 0 10px;}
+	.calendar-list a.book-calendar {padding: 8px 10px;}
+	.info-doctor .list__avt .timeday a {width: 160px;margin-bottom: 10px;}
+	.bgr-doctor .banner img {height: 160px !important;}
+	.bgr-doctor .banner h1 {font-size: 22px;}
+	.content_contact .login-cnt button.btn-gd {padding: 15px 70px;}	
+	.content-right .list__avt p.object-patient {float: inherit;}
+	.patient-records .list-patient li {display: block;}
+	.notification.favorite-clinic .tablink{float: inherit;width: auto;}
+	.info-kb .examination-time ul li {margin-right: 5px;}
+	.share-url ul li {width: 90px;}
+}
+@media only screen and (max-width: 375px){
+	.patient-records .list-patient {padding: 5px;}
+	.patient-records .list-patient li { margin-right: 5px;}
+	.content__appointment a.btn-xnd {padding: 15px 70px; margin-top: 0;}
+	.list__avt h5.name {font-size: 16px;}
+	.information .login-info button.btn-gd {width: 100px;margin-left: 10px;height: 40px;}
+	.info-dt .timeday a {margin-right: 5px;}
+	.info-dt ul.acquirements li {margin-right: 5px;}
+	.info-kb .day-code {top: -18%;}
+	.banner-sale span.day_sale {bottom: 2px;font-size: 10px;left: -10px;}
+	.banner-sale h2.heder__h2 {font-size: 30px;}
+	.search-right select#news {margin-right: 10px;}
+	.search-right button.btn-search {width: 40px;}
+	.search-right input.form-control {width: 190px;}
+}
+@media only screen and (max-width: 320px){
+	.nav-info ul li a {padding: 9px 0;margin-right: 2px;}
+	.cate__hpt { padding: 20px 0 10px;}
+	.cate__hpt li i.fa.fa-angle-right {margin: 0 10px;}
+	.info-doctor .list__avt ul.sale li {margin-right: 0;}	
+	.user img.logo__bv {    width: 35px; height: 35px;margin-right: -15px;}
+	.content-right .list__avt .remove-object {top: 20px;}
+	.content-right .list__avt .remove-object a.btn.btn-pencill {display: block;margin-left: 2px;}
+	.information #form-info .form-group select.day {width: 28%; margin-right: 10px;}
+	.info-dt .remove-love{top: -20%;}
+	.info-dt .timeday a , .info-kb .examination-time ul li{width: 82px;}
+	.info-dt ul.acquirements li:last-child {padding-left: 31px;}
+	.info-kb .day-code a.rm-day {padding: 8px 10px;}
+	.share-url .form-group input[type="name"] {width: 65%;}
+}

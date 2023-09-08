@@ -1,0 +1,25 @@
+
+.icon-cs {
+	display: none;	
+    text-align: right;
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.icon-cs .icon-filter:before{
+	font-size: 20px;
+	color: #0081b3;
+}
+.done-dropdown {
+	text-align: center;
+    display: block;
+    padding: 7px 0;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+    width: 100%;
+	bottom: 0;
+	position: absolute;
+	background-color: #fff;
+}
+.bootstrap-select.btn-group .dropdown-menu.inner {
+	padding-bottom: 35px;
+}
