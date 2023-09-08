@@ -14,13 +14,14 @@ namespace QA.TNGo_v2.Controllers
             _logger = logger;
         }
 
+
         public IActionResult Index(Login _login)
         {
             var cookie = HttpContext.Request.Cookies["USER_LOGIN"];
 
             if ((cookie != null))
             {
-                return RedirectToAction("Index", "Category");
+                return View();
             }
             return RedirectToAction("Index", "Login");
         }

@@ -43,8 +43,7 @@ namespace QA.TNGo_v2.Controllers
                 if (result != null)
                 {
                     Response.Cookies.Append("USER_LOGIN", "logged_in");
-                    return RedirectToAction("Index", "Category");
-
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
