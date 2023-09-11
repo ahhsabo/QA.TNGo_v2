@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\mediaUpload\**" />
+    <Content Remove="wwwroot\mediaUpload\**" />
+    <EmbeddedResource Remove="wwwroot\mediaUpload\**" />
+    <None Remove="wwwroot\mediaUpload\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
@@ -29,7 +36,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\mediaUpload\2023\09\" />
+    <Folder Include="Areas\Manager\Views\" />
+    <Folder Include="Areas\Manager\Controllers\" />
   </ItemGroup>
 
 </Project>
