@@ -18,5 +18,6 @@ namespace QA.TNGo_v2.Models
         public DbSet<Models.Product> Product { get; set; }
         public DbSet<Models.Category> Category { get; set; }
         public DbSet<Models.Image> Image { get; set; }
+        public DbSet<Models.UserManager> UserManager { get; set; }
     }
 }

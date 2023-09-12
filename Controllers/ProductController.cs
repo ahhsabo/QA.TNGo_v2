@@ -196,9 +196,6 @@ namespace QA.TNGo_v2.Controllers
             return View(product);
         }
 
-
-
-
         private bool ProductExists(int id)
         {
           return (_context.Product?.Any(e => e.ID == id)).GetValueOrDefault();

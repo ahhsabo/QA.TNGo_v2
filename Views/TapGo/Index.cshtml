@@ -3,13 +3,320 @@
 @{
     ViewData["Title"] = "Index";
 }
+@section Styles{
+    <link rel="stylesheet" href="~/lib/sweetalert2-11.7.0/package/dist/sweetalert2.css">
+    <style>
+        #TapGo {
+            background-color: #F4F4FA;
+        }
+
+            #TapGo h3 {
+                margin-bottom: 15px;
+                font-size: 26px;
+                font-weight: 800;
+            }
+
+        .tapgo-main {
+            margin-bottom: 60px;
+        }
+
+        .boxo {
+            display: block;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px 0;
+            width: 85%;
+            border-radius: 20px;
+        }
+
+            .boxo h5 {
+                text-align: center;
+                font-size: 26px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .boxo p {
+                font-size: 20px;
+                margin-left: 30px;
+            }
+
+            .boxo img {
+                display: block;
+                margin: 10px auto 30px;
+                width: 90%;
+            }
+
+        .intro {
+            font-size: larger;
+            background-color: #8A6BFA;
+            color: white;
+            text-align: justify;
+            text-align-last: center;
+            border-radius: 10px;
+        }
+
+        .manual-step {
+            font-size: larger;
+            background-color: #8A6BFA;
+            color: white;
+            text-align: justify;
+            padding: 20px 30px;
+            border-radius: 15px;
+            height: 300px;
+        }
+
+            .manual-step h5 {
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            .manual-step ul {
+                margin-left: 50px;
+            }
+
+                .manual-step ul li {
+                    list-style: disc;
+                }
+
+        .tapgo-manual img {
+            display: block;
+            margin: 30px auto;
+            width: 80px;
+        }
+
+        .tapgo-station__search {
+            margin: 0 240px;
+        }
+
+        .tapgo-station tr:hover {
+            background-color: black;
+            opacity: 0.4;
+            color: whitesmoke;
+        }
+
+        .tapgo-station tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .station-box {
+            margin: 20px 250px 10px;
+            background-color: white;
+            font-size: 20px;
+            height: 500px;
+            overflow: scroll;
+        }
+
+        .station-td {
+            width: 100px;
+            padding-left: 50px;
+        }
+
+        #tapgo-station h5 {
+            font-style: italic;
+            margin: 0 250px;
+        }
+        /*Search*/
+        .search-box {
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            font-weight: 700;
+            padding: 15px 45px 15px 15px;
+            border-radius: 6px;
+            border: none;
+            transition: all .4s;
+        }
+
+            .search-input:focus {
+                border: none;
+                outline: none;
+                box-shadow: 0 1px 12px #b8c6db;
+                -moz-box-shadow: 0 1px 12px #b8c6db;
+                -webkit-box-shadow: 0 1px 12px #b8c6db;
+            }
+
+        .search-btn {
+            background-color: transparent;
+            font-size: 18px;
+            padding: 6px 9px;
+            margin-left: -45px;
+            border: none;
+            color: #6c6c6c;
+            transition: all .4s;
+            z-index: 10;
+        }
+
+            .search-btn:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+                color: black;
+            }
+
+            .search-btn:focus {
+                outline: none;
+                color: black;
+            }
+
+        .checkWallet {
+            margin: 100px 0;
+        }
+
+            .checkWallet h4 {
+                margin-top: 20px;
+            }
+
+        .search-input {
+            width: 30%;
+            height: 45px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        @@media (min-width: 992px) and (max-width: 1400px) {
+            .manual-step {
+                height: 390px;
+            }
+
+            .tapgo-station__search {
+                margin: 0 240px;
+            }
+        }
+
+        @@media (min-width: 576px) and (max-width: 991px) {
+            .manual-step {
+                height: auto;
+            }
+
+            .tapgo-station__search {
+                margin: 0;
+            }
+
+            .boxo {
+                width: 95%;
+            }
+
+            .p-intro p {
+                font-size: larger;
+                background-color: #8A6BFA;
+                color: white;
+                text-align: justify;
+                text-align-last: center;
+                padding: 20px 20px;
+                margin: 10px 10px;
+                border-radius: 10px;
+            }
 
 
-<header>
-    <h2 class="price-title text-center mb-5">TapGo</h2>
-</header>
+            #tapgo-station {
+                margin-bottom: 0;
+            }
 
-<div class="tapgo-intro tapgo-main">
+                #tapgo-station h5 {
+                    font-style: italic;
+                    margin: 0;
+                }
+
+            .station-box {
+                margin: 20px 0;
+                background-color: white;
+                font-size: 18px;
+                height: 400px;
+                overflow: scroll;
+            }
+
+            .station-td {
+                width: 60px;
+                padding-left: 15px;
+            }
+        }
+
+        @@media (max-width: 575px) {
+            .boxo {
+                width: 95%;
+            }
+
+            .tapgo-station__search {
+                margin: 0;
+            }
+
+                .tapgo-station__search h4 {
+                    margin-top: 10px;
+                }
+
+            .p-intro p {
+                font-size: larger;
+                background-color: #8A6BFA;
+                color: white;
+                text-align: justify;
+                text-align-last: center;
+                padding: 20px 20px;
+                margin: 10px 10px;
+                border-radius: 10px;
+            }
+
+            .manual-step {
+                font-size: larger;
+                background-color: #8A6BFA;
+                color: white;
+                text-align: justify;
+                padding: 20px 30px;
+                border-radius: 10px;
+                height: auto;
+            }
+
+            #tapgo-station {
+                margin-bottom: 0;
+            }
+
+                #tapgo-station h5 {
+                    font-style: italic;
+                    margin: 0;
+                }
+
+            .station-box {
+                margin: 20px 0;
+                background-color: white;
+                font-size: 18px;
+                height: 400px;
+                overflow: scroll;
+            }
+
+            .station-td {
+                width: 50px;
+                padding-left: 10px;
+            }
+
+            .search-input {
+                width: 90%;
+                height: 45px;
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
+
+        #active-card-container label {
+            margin-left: 3px;
+        }
+
+        #active-card-container img {
+            max-height: 300px;
+        }
+
+        .img-preview-box {
+            height: 350px;
+            background-color: white;
+        }
+    </style>
+}
+<section class="banner">
+    <img src="/image/tapgo-background.png" class="img-fluid" />
+    <div class="h1 banner-text-centered">Thẻ trả trước TapGo</div>
+</section>
+
+<div class="tapgo-intro tapgo-main container">
     <div class="h3 fw-bold">Giới thiệu</div>
     <div class="intro py-5 d-flex flex-row justify-content-center">
         <div class="w-75">Thẻ trả trước TapGo là một tính năng mới cho phép khách hàng thuê xe đạp công cộng TNGo ngay chỉ với vài thao tác đơn giản mà không cần tải ứng dụng và đăng ký tài khoản. Khách hàng có thể mua thẻ TapGo tại các <a style="color:#EFE952;text-decoration:underline;" href="#tapgo-station">địa chỉ dưới đây.</a></div>

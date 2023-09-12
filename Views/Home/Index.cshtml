@@ -1,4 +1,56 @@
-﻿<!-- Slide banner -->
+﻿@section Styles{
+    <link href="~/lib/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet" />
+    <style>
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+            .slide-overlay .caption {
+                width: 46%;
+                color: #fff;
+            }
+
+            .slide-overlay h5 {
+                line-height: 1.8;
+            }
+
+        .first-caption {
+            position: absolute;
+            top: 82%;
+            left: 38%;
+            transform: translate(-50%, -50%);
+        }
+
+        .second-caption {
+            position: absolute;
+            bottom: 5%;
+            left: 15%;
+        }
+
+        .third-caption {
+            position: absolute;
+            bottom: 10%;
+            left: 15%;
+        }
+
+        .ticket-discount {
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+}
+
+<!-- Slide banner -->
+
+
 <!-- Giới thiệu -->
 <section id="dlapp" class="dlapp">
     <div class="container">
@@ -72,7 +124,36 @@
 </section>
 
 <!-- HDSD -->
-<section id="HDSD" class="manuals py-5 my-5"><div class="container"><div class="col-sm-12"><header><h2><b>Cách sử dụng</b></h2><h3>Sau khi <span style="color:#0094fb">Đăng kí</span>, sử dụng dễ dàng với 3 bước: <span style="color:#0094fb">Mở khóa - Đi xe - Trả xe</span></h3></header></div><div class="col-sm-12"><div class="owl-carousel owl-theme owl-loaded owl-drag" id="manualsct"><!--<div class="item" data-dot="<button>1</button><h2>Tìm kiếm trạm xe</h2><p>Bạn hãy mở bản đồ trạm xe trên ứng dụng TNGo để tìm kiếm trạm còn xe gần nhất.</p>"><img src="image/use-1.png" alt=""></div>--><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2592px, 0px, 0px); transition: all 0.25s ease 0s; width: 9072px;"><div class="owl-item cloned" style="width: 1296px;"><div class="item" data-dot="<button>2</button><h2>Đi xe</h2><p>Tận hưởng chuyến đi, nên đội mũ bảo hiểm và tuân thủ luật giao thông. Trong quá trình sử dụng bạn có thể khóa xe tạm thời và mở lại bất kì lúc nào bằng ứng dụng di động.</p>"><img src="/image/use-2.png" alt=""></div></div><div class="owl-item cloned" style="width: 1296px;"><div class="item" data-dot="<button>3</button><h2>Trả xe</h2><p>Trả xe đạp về trạm TNGo bất kỳ. Thực hiện đóng khóa xe và xác nhận kết thúc chuyến đi trên ứng dụng TNGo.</p>"><img src="/image/use-3.png" alt=""></div></div><div class="owl-item active" style="width: 1296px;"><div class="item" data-dot="<button>1</button><h2>Mở khóa</h2><p>Chạm vào nút ''Mở khóa'' và quét mã QR trên xe đạp/khóa xe để tự động mở khóa.</p>"><img src="/image/use-1.png" alt=""></div></div><div class="owl-item" style="width: 1296px;"><div class="item" data-dot="<button>2</button><h2>Đi xe</h2><p>Tận hưởng chuyến đi, nên đội mũ bảo hiểm và tuân thủ luật giao thông. Trong quá trình sử dụng bạn có thể khóa xe tạm thời và mở lại bất kì lúc nào bằng ứng dụng di động.</p>"><img src="/image/use-2.png" alt=""></div></div><div class="owl-item" style="width: 1296px;"><div class="item" data-dot="<button>3</button><h2>Trả xe</h2><p>Trả xe đạp về trạm TNGo bất kỳ. Thực hiện đóng khóa xe và xác nhận kết thúc chuyến đi trên ứng dụng TNGo.</p>"><img src="/image/use-3.png" alt=""></div></div><div class="owl-item cloned" style="width: 1296px;"><div class="item" data-dot="<button>1</button><h2>Mở khóa</h2><p>Chạm vào nút ''Mở khóa'' và quét mã QR trên xe đạp/khóa xe để tự động mở khóa.</p>"><img src="/image/use-1.png" alt=""></div></div><div class="owl-item cloned" style="width: 1296px;"><div class="item" data-dot="<button>2</button><h2>Đi xe</h2><p>Tận hưởng chuyến đi, nên đội mũ bảo hiểm và tuân thủ luật giao thông. Trong quá trình sử dụng bạn có thể khóa xe tạm thời và mở lại bất kì lúc nào bằng ứng dụng di động.</p>"><img src="/image/use-2.png" alt=""></div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><button>1</button><h2>Mở khóa</h2><p>Chạm vào nút ''Mở khóa'' và quét mã QR trên xe đạp/khóa xe để tự động mở khóa.</p></div><div class="owl-dot"><button>2</button><h2>Đi xe</h2><p>Tận hưởng chuyến đi, nên đội mũ bảo hiểm và tuân thủ luật giao thông. Trong quá trình sử dụng bạn có thể khóa xe tạm thời và mở lại bất kì lúc nào bằng ứng dụng di động.</p></div><div class="owl-dot"><button>3</button><h2>Trả xe</h2><p>Trả xe đạp về trạm TNGo bất kỳ. Thực hiện đóng khóa xe và xác nhận kết thúc chuyến đi trên ứng dụng TNGo.</p></div></div></div></div></div></section>
+<section id="HDSD" class="manuals py-5 my-5">
+    <div class="container">
+        <div class="col-sm-12">
+            <header>
+                <h2><b>Cách sử dụng</b></h2>
+                <h3>Sau khi <span style="color:#0094fb">Đăng kí</span>, sử dụng dễ dàng với 3 bước: <span style="color:#0094fb">Mở khóa - Đi xe - Trả xe</span></h3>
+            </header>
+        </div>
+        <div class="col-sm-12">
+            <div class="owl-carousel owl-theme" id="manualsct">
+                <!--<div class="item"
+                     data-dot="<button>1</button><h2>Tìm kiếm trạm xe</h2><p>Bạn hãy mở bản đồ trạm xe trên ứng dụng TNGo để tìm kiếm trạm còn xe gần nhất.</p>">
+                    <img src="image/use-1.png" alt="">
+                </div>-->
+                <div class="item"
+                     data-dot="<button>1</button><h2>Mở khóa</h2><p>Chạm vào nút ''Mở khóa'' và quét mã QR trên xe đạp/khóa xe để tự động mở khóa.</p>">
+                    <img src="/image/use-1.png" alt="">
+                </div>
+                <div class="item"
+                     data-dot="<button>2</button><h2>Đi xe</h2><p>Tận hưởng chuyến đi, nên đội mũ bảo hiểm và tuân thủ luật giao thông. Trong quá trình sử dụng bạn có thể khóa xe tạm thời và mở lại bất kì lúc nào bằng ứng dụng di động.</p>">
+                    <img src="/image/use-2.png" alt="">
+                </div>
+                <div class="item"
+                     data-dot="<button>3</button><h2>Trả xe</h2><p>Trả xe đạp về trạm TNGo bất kỳ. Thực hiện đóng khóa xe và xác nhận kết thúc chuyến đi trên ứng dụng TNGo.</p>">
+                    <img src="/image/use-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--Bảng giá-->
 <section id="price" class="price py-5">
     <div class="container">
@@ -229,14 +310,88 @@
     </div>
 </section>
 <!-- Tin tức-->
-<section class="py-5 mb-5">
+<section class="py-5 mb-5" style="background: #F4F4FA;">
     <div class="container">
-        <h2>Báo chí nói gì về chúng tôi</h2>
+        <h2 class="price-title text-center mb-5">Báo chí nói gì về chúng tôi</h2>
+
+        <div class="row news-grid">
+            <div class="col-sm-3">
+                <!--<a href="/NewsDetail">-->
+                <img src="/image/image 6.png" class="mx-auto d-block mb-3" style="height:40px;width:auto" />
+                <img src="/image/Rectangle 595.jpg" class="img-fluid w-100" />
+                <div class="pt-2 pb-4">
+                    <div class="fw-semibold text-break">TP.HCM cho thí điểm xe đạp công cộng ở khu vực quận 1</div>
+                </div>
+                <!--</a>-->
+            </div>
+
+            <div class="col-sm-3">
+                <img src="/image/TNO_logo2.svg" class="mx-auto d-block mb-3" style="height:40px;width:auto" />
+                <img src="/image/Rectangle 598.jpg" class="img-fluid w-100" />
+                <div class="pt-2 pb-4">
+                    <div class="fw-semibold text-break">Xe đạp công cộng: Kỳ vọng và rào cản!</div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="/image/image 8.png" class="mx-auto d-block mb-3" style="height:40px;width:auto" />
+                <img src="/image/Rectangle 597.jpg" class="img-fluid w-100" />
+                <div class="pt-2 pb-4">
+                    <div class="fw-semibold text-break">Xe đạp công cộng: Kỳ vọng và rào cản!</div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="/image/image 9.png" class="mx-auto d-block mb-3" style="height:40px;width:auto" />
+                <img src="/image/Rectangle 596.jpg" class="img-fluid w-100" />
+                <div class="pt-2 pb-4">
+                    <div class="fw-semibold text-break">Xe đạp công cộng: Kỳ vọng và rào cản!</div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </section>
 <!--Khoảnh khắc TNGo-->
-<section class="py-5 mb-5">
+<section class="gallery py-5 mb-5">
     <div class="container">
-        <h2>Khoảnh khắc TNGo</h2>
+        <h2 class="price-title text-center mb-5">Khoảnh khắc TNGo</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <a data-fancybox="gallery" data-src="/image/Rectangle 628.jpg" data-caption="Ảnh 1">
+                    <img src="~/image/Rectangle 628.jpg" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a data-fancybox="gallery" data-src="/image/Rectangle 629.jpg">
+                    <img src="~/image/Rectangle 629.jpg" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a data-fancybox="gallery" data-src="/image/Rectangle 630.jpg">
+                    <img src="~/image/Rectangle 630.jpg" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a data-fancybox="gallery" data-src="/image/Rectangle 631.jpg">
+                    <img src="~/image/Rectangle 631.jpg" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a data-fancybox="gallery" data-src="/image/Rectangle 632.jpg">
+                    <img src="~/image/Rectangle 632.jpg" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a data-fancybox="gallery" data-src="/image/Rectangle 633.jpg">
+                    <img src="~/image/Rectangle 633.jpg" class="img-fluid" />
+                </a>
+            </div>
+        </div>
     </div>
 </section>
+
+@section Scripts{
+    <script src="~/lib/fancybox/dist/jquery.fancybox.min.js"></script>
+}
