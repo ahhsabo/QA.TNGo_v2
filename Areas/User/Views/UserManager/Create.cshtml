@@ -1,7 +1,7 @@
 ﻿@model QA.TNGo_v2.Models.UserManager
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
 <h2>Create</h2>
@@ -53,7 +53,7 @@
                 <span asp-validation-for="DisplayName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-primary my-3" />
             </div>
         </form>
     </div>
@@ -63,6 +63,4 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+

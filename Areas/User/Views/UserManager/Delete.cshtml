@@ -1,7 +1,7 @@
 ﻿@model QA.TNGo_v2.Models.UserManager
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
 <h2>Delete</h2>
@@ -63,7 +63,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <input type="submit" value="Delete" class="btn btn-danger my-3" /> |
         <a asp-action="Index">Back to List</a>
     </form>
 </div>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +22,7 @@ namespace QA.TNGo_v2.Areas.User.Controllers
         }
 
         // GET: User/UserManager
-        [Route("Index")]
+        [Route("")]
         public async Task<IActionResult> Index()
         {
               return _context.UserManager != null ? 
@@ -64,6 +65,8 @@ namespace QA.TNGo_v2.Areas.User.Controllers
         {
             if (ModelState.IsValid)
             {
+                //var password = userManager.PasswordHash;
+                //string passwordHash = ((newPassword != null) ? PasswordHasher.HashPassword(user, newPassword) : null);
                 _context.Add(userManager);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

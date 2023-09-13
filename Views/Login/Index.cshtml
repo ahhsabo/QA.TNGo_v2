@@ -3,74 +3,27 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="container">
+    <div class="row">
+        <div class="loginScreen" style="padding:50px 450px;margin:100px 0;">
+            <h1>Login</h1>
+            <form asp-action="Index" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
 
-<div class="row">
-    <h1>Login</h1>
-    <form asp-action="Index" method="post">
-        <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserName"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
 
-        <div class="form-group">
-            <label asp-for="UserName"></label>
-            <input asp-for="UserName" class="form-control" />
-            <span asp-validation-for="UserName" class="text-danger"></span>
-        </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
 
-        <div class="form-group">
-            <label asp-for="Password"></label>
-            <input asp-for="Password" class="form-control" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-</div> 
-@* 
-<div class="row">
-    <h2>Upload file using jQuery ajax in Asp.net Core Razor Pages</h2>
-    <h3>Quang Anh đõooooo</h3>
-    <div class=" form-group  text-center offset-3">
-        <div class="custom-file">
-            <input type="file" id="fileUpload" class="fileUpload">
-            <button id="btnUpload" class="btn btn-success">Upload</button>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
         </div>
     </div>
-</div> 
-
-@section Scripts {
-    <script>
-        $("#fileUpload").on('change', function () {
-            var files = $('#fileUpload').prop("files");
-            var url = "/Index?handler=MyUploader";
-            formData = new FormData();
-            formData.append("MyUploader", files[0]);
-
-            jQuery.ajax({
-                type: 'POST',
-                url: url,
-                data: formData,
-                cache: false,
-                contentType: false,
-                processData: false,
-                beforeSend: function (xhr) {
-                    xhr.setRequestHeader("XSRF-TOKEN",
-                        $('input:hidden[name="__RequestVerificationToken"]').val());
-                },
-                success: function (repo) {
-                    if (repo.status == "success") {
-                        alert("File : " + repo.filename + " is uploaded successfully");
-                    }
-                },
-                error: function () {
-                    alert("Error occurs");
-                }
-            });
-        });
-
-        // If you want to upload file on button click, then use below button click event
-        $("#btnUpload").on('click', function () {
-            // add jQuery ajax code to upload
-        });
-
-    </script>
-}
- *@
+</div>
