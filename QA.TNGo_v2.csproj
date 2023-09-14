@@ -35,9 +35,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.9" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Manager\Views\" />
-    <Folder Include="Areas\Manager\Controllers\" />
-  </ItemGroup>
-
 </Project>
