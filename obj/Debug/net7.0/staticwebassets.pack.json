@@ -15349,306 +15349,6 @@
       "PackagePath": "staticwebassets\\assets\\lang\\sp.json"
     },
     {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\CHANGELOG.md",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\CHANGELOG.md"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\LICENSE.md",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\LICENSE.md"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\README.md",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\README.md"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\ckeditor.d.ts",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\ckeditor.d.ts"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js.map",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\af.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\af.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ar.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ar.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ast.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ast.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\az.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\az.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\bg.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\bg.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\bn.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\bn.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\bs.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\bs.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ca.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ca.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\cs.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\cs.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\da.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\da.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\de-ch.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\de-ch.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\de.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\de.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\el.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\el.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\en-au.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\en-au.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\en-gb.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\en-gb.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\eo.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\eo.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\es-co.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\es-co.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\es.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\es.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\et.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\et.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\eu.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\eu.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\fa.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\fa.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\fi.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\fi.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\fr.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\fr.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\gl.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\gl.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\gu.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\gu.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\he.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\he.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\hi.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\hi.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\hr.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\hr.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\hu.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\hu.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\id.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\id.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\it.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\it.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ja.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ja.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\jv.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\jv.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\km.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\km.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\kn.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\kn.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ko.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ko.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ku.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ku.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\lt.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\lt.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\lv.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\lv.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ms.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ms.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\nb.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\nb.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ne.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ne.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\nl.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\nl.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\no.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\no.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\oc.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\oc.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\pl.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\pl.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\pt-br.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\pt-br.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\pt.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\pt.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ro.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ro.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ru.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ru.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\si.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\si.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sk.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sk.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sl.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sl.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sq.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sq.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sr-latn.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sr-latn.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sr.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sr.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sv.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\sv.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\th.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\th.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\tk.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\tk.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\tr.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\tr.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\tt.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\tt.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ug.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ug.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\uk.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\uk.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ur.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\ur.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\uz.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\uz.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\vi.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\vi.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\zh-cn.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\zh-cn.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\zh.js",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\build\\translations\\zh.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\package.json",
-      "PackagePath": "staticwebassets\\assets\\libs\\@ckeditor\\ckeditor5-build-classic\\package.json"
-    },
-    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\@simonwep\\pickr\\pickr.es5.min.js",
       "PackagePath": "staticwebassets\\assets\\libs\\@simonwep\\pickr\\pickr.es5.min.js"
     },
@@ -17263,6 +16963,306 @@
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\choices.js\\src\\styles\\choices.scss",
       "PackagePath": "staticwebassets\\assets\\libs\\choices.js\\src\\styles\\choices.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\CHANGELOG.md"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\LICENSE.md",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\README.md",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\ckeditor.d.ts",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\ckeditor.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js.map",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\ckeditor.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\af.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\af.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ar.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ar.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ast.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ast.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\az.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\az.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\bg.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\bg.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\bn.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\bn.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\bs.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\bs.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ca.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ca.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\cs.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\cs.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\da.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\da.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\de-ch.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\de-ch.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\de.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\de.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\el.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\el.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\en-au.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\en-au.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\en-gb.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\en-gb.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\eo.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\eo.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\es-co.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\es-co.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\es.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\es.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\et.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\et.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\eu.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\eu.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\fa.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\fa.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\fi.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\fi.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\fr.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\fr.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\gl.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\gl.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\gu.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\gu.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\he.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\he.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\hi.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\hi.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\hr.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\hr.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\hu.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\hu.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\id.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\id.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\it.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\it.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ja.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ja.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\jv.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\jv.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\km.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\km.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\kn.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\kn.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ko.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ko.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ku.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ku.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\lt.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\lt.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\lv.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\lv.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ms.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ms.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\nb.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\nb.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ne.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ne.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\nl.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\nl.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\no.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\no.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\oc.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\oc.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\pl.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\pl.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\pt-br.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\pt-br.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\pt.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\pt.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ro.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ro.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ru.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ru.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\si.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\si.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sk.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sk.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sl.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sl.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sq.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sq.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sr-latn.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sr-latn.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sr.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sr.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sv.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\sv.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\th.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\th.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\tk.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\tk.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\tr.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\tr.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\tt.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\tt.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ug.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ug.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\uk.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\uk.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ur.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\ur.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\uz.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\uz.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\vi.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\vi.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\zh-cn.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\zh-cn.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\zh.js",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\build\\translations\\zh.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\package.json",
+      "PackagePath": "staticwebassets\\assets\\libs\\ckeditor\\ckeditor5-build-classic\\package.json"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\assets\\libs\\cleave.js\\addons\\cleave-phone.ac.js",

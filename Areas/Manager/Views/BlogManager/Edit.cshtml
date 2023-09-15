@@ -3,6 +3,20 @@
 @{
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
+@section Scripts{
+    <!--CK Editor-->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#txt_content'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+}
 
 <h2>Edit</h2>
 
@@ -25,7 +39,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Content" class="control-label"></label>
-                <input asp-for="Content" class="form-control" />
+                <textarea asp-for="Content" class="form-control" id="txt_content"></textarea>
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -44,7 +58,7 @@
                 <span asp-validation-for="DatePosted" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-primary my-3" />
             </div>
         </form>
     </div>

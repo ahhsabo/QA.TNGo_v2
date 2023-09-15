@@ -1,0 +1,74 @@
+﻿@model QA.TNGo_v2.Models.BlogManager
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles{
+    <style>
+        #news-container {
+            text-align: justify;
+        }
+
+        .news-content img {
+            width: 100%;
+            height: 100%
+        }
+
+        .banner-text-midle-left-mobile {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            width: 90%;
+            font-weight: 600;
+            color: #f1f1f1;
+            text-align: left;
+            transform: translate(0%,-50%);
+        }
+
+        #news-next a, #related-news-container a {
+            color: black;
+        }
+    </style>
+}
+
+<div class="banner" id="news-banner">
+    <img src="/image/Rectangle 618.png" class="img-fluid w-100" />
+    <h1 class="banner-text-midle-left d-none d-sm-block">@Model.Name</h1>
+    <h4 class="banner-text-midle-left-mobile d-block d-sm-none">@Model.Name</h4>
+</div>
+
+<section class="container my-5 py-5 news-detail">
+    <div class="row">
+        <div class="col-sm-1 mb-2">
+            <a href=# class="d-inline d-sm-block mb-2"><i class="fa-brands fa-facebook fa-2x d-none d-sm-block"></i><i class="fa-brands fa-facebook d-inline d-sm-none"></i></a>
+            <a href=# class="d-inline d-sm-block mb-2"><i class="fa-brands fa-twitter fa-2x d-none d-sm-block"></i><i class="fa-brands fa-twitter d-inline d-sm-none"></i></a>
+            <a href=# class="d-inline d-sm-block mb-2"><i class="fa-brands fa-instagram fa-2x d-none d-sm-block"></i><i class="fa-brands fa-instagram d-inline d-sm-none"></i></a>
+            <a href=# class="d-inline d-sm-block mb-2"><i class="fa-brands fa-google-plus-g fa-2x d-none d-sm-block"></i><i class="fa-brands fa-google-plus-g d-inline d-sm-none"></i></a>
+            <a href=# class="d-inline d-sm-block mb-2"><i class="fa-solid fa-link fa-2x d-none d-sm-block"></i><i class="fa-solid fa-link d-inline d-sm-none"></i></a>
+        </div>
+        <div class="col-sm-7">
+            <div id="news-container">
+                <div class="row mb-2">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6 text-end">
+                        <i class="fa-regular fa-clock"></i>
+                        <p style="display: inline;">@Model.DatePosted</p>
+                    </div>
+                </div>
+
+                <h6 class="fw-bold">@Model.Summary</h6>
+
+                <div class="news-content">@Html.Raw(@Model.Content)</div>
+
+                <div class="text-end fw-bold">@Model.Author</div>
+
+
+            </div>
+
+        </div> 
+
+        <div class="col-sm-4 border-start" id="related-news-container">
+        </div>
+    </div>
+</section>

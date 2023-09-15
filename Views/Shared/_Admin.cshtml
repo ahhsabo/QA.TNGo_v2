@@ -3124,6 +3124,8 @@
 
     <!-- App js -->
     <script src="~/assets/js/app.js"></script>
+@*     @RenderSection("Scripts", required:false) *@
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>

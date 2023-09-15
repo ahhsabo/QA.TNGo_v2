@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Threading.Tasks;
@@ -19,11 +20,11 @@ namespace QA.TNGo_v2.Controllers
             _context = context;
         }
 
-        // GET: Product
+        // GET: News
         public IActionResult Index()
         {
-            return View();
+            var blog = _context.BlogManager.ToList();
+            return View(blog);
         }
-
     }
 }
