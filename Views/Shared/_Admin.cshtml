@@ -2272,7 +2272,7 @@
 
             <div class="page-content">
                 <div class="container-fluid">
-                   @RenderBody()
+                    @RenderBody()
                 </div>
             </div>
             <!-- End Page-content -->
@@ -3112,6 +3112,9 @@
     <script src="~/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="~/assets/js/plugins.js"></script>
 
+    <!--CK Editor-->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+
     <!-- apexcharts -->
     <script src="~/assets/libs/apexcharts/apexcharts.min.js"></script>
 
@@ -3124,7 +3127,6 @@
 
     <!-- App js -->
     <script src="~/assets/js/app.js"></script>
-@*     @RenderSection("Scripts", required:false) *@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

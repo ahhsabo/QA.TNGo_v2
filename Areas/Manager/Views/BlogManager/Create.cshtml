@@ -5,10 +5,9 @@
 }
 @section Scripts{
     <!--CK Editor-->
-    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
     <script>
         ClassicEditor
-            .create(document.querySelector('#txt_content'))
+            .create(document.querySelector('#blogManager_content'))
             .then(editor => {
                 console.log(editor);
             })
@@ -37,7 +36,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Content" class="control-label"></label>
-                <textarea asp-for="Content" class="form-control" id="txt_content"></textarea>
+                <textarea asp-for="Content" class="form-control" id="blogManager_content"></textarea>
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
             <div class="form-group">

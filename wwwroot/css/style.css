@@ -268,7 +268,6 @@ body {
 .menuall > ul li a {
     font-size: 16px;
     color: white;
-    ;
     font-weight: 700;
     line-height: 37px;
 }
@@ -405,4 +404,5 @@ a:focus, a:hover {
     text-decoration: none;
     color: #3684c0
 }
+
 

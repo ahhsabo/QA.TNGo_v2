@@ -14,4 +14,3 @@ namespace QA.TNGo_v2.Models
         public string? Path { get; set; }
     }
 }
-    

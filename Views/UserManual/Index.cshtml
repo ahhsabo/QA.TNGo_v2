@@ -1,7 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Index";
-} 
-
+}
+@section Styles{
+    <link href="~/css/manual.css" rel="stylesheet" />
+}
 <!--Banner-->
 <section class="banner">
     <img src="/image/banner-user-manual.jpg" class="img-fluid" />
@@ -52,6 +54,298 @@
             </div>
         </div>
 
+    </div>
+</section>
+
+@* Câu hỏi thường gặp *@
+<section class="support pb-5 mb-5">
+    <div class="container">
+
+        <div class="row mb-5">
+            <header>
+                <h2><b>Câu hỏi thường gặp</b></h2>
+            </header>
+        </div>
+
+        <div class="row" id="faq">
+            <div class="col-sm-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#menu1" role="tab" aria-controls="menu1" aria-selected="true">
+                            <div class="diamond-shape">
+                                <div class="item-count">1</div>
+                            </div>
+                            <p>Thắc mắc đi xe</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#menu2" role="tab" aria-controls="menu2" aria-selected="true">
+                            <div class="diamond-shape">
+                                <div class="item-count">2</div>
+                            </div>
+                            <p>Vấn đề thanh toán</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#menu3" role="tab" aria-controls="menu3" aria-selected="true">
+                            <div class="diamond-shape">
+                                <div class="item-count">3</div>
+                            </div>
+                            <p>Vấn đề khác</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div id="menu1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                        <div class="accordion" id="accordion1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        <b>Khi nào tôi có thể bắt đầu đạp xe?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>TNGo Bikes sẵn sàng để mở khóa từ 5 giờ 00 phút sáng đến 20 giờ đêm. Bạn có thể đỗ xe trong trạm bất cứ lúc nào.</p>
+                                        <p>Xin mời trải nghiệm!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        <b>Mùa mưa thì sao?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Xe đạp chung_ TNGo có sẵn quanh năm, phục vụ 24h/7 ngày Tuy nhiên trong mùa mưa thì các bạn nên tránh những cung đường ngập nước vì vậy bạn hãy cẩn thận điều khiển xe  và kiểm soát lộ trình di chuyển.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <b>Xe đạp có điện không?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Không.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        <b>Xe đạp có định vị GPRS không?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Có, Để chung tôi đảm bảo hỗ trợ nhanh nhất cho bạn trong trường hợp xe đạp bị sự cố trong quá trình vận hành.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        <b>Làm cách nào để xác định vị trí trạm xe đạp gần nhất?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Bạn có thể tìm thấy điều này trong ứng dụng của chúng tôi hoặc trong bản đồ trạm đặt xe. Trong ứng dụng của chúng tôi, bạn cũng có thể xem trạng thái thực của các trạm đặt xe của chúng tôi.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        <b>Ứng dụng có cần thiết để mở khóa xe đạp không?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Có, bạn cần tải ứng dụng về máy điện thoại cuả bạn. Bạn chỉ có thể mở khóa xe đạp bằng mã QR thông qua ứng dụng.</p>
+                                        <p>link android:</p>
+                                        <p><a href="https://apps.apple.com/app/id1552166916" target="_blank">https://apps.apple.com/app/id1552166916</a></p>
+                                        <p>link apple app:</p>
+                                        <p><a href="https://play.google.com/store/apps/details?id=com.tngo" target="_blank">https://play.google.com/store/apps/details?id=com.tngo</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="menu2" class="tab-pane fade">
+
+                        <div class="accordion" id="accordion2">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        <b>Việc tính cước thực hiện như thế nào?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Việc tính cước theo gói bạn đăng ký sử dụng và được quy về block 30 phút là gói thấp nhất cố định để mở khóa một chiếc xe và sau đó tính tiếp theo phút và block khi bạn đi. Giá và khuyến mãi có thể thay đổi theo thành phố, theo tháng, ngày trong tuần và thời gian trong ngày.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        <b>Tôi có phải trả tiền bằng tài khoản điện thoại thông minh của mình không?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Không, việc nhập số điện thoại di động và mã xác minh của bạn chỉ để xác nhận bạn là ai. Việc thanh toán bằng thẻ thanh toán (Visa hoặc MasterCard) hoặc các App trung gian.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <b>Tôi đã nhận được một thẻ quà tặng. Làm cách nào để bắt đầu?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Bạn thật may mắn! Hãy nhập mã trên ứng dụng TNGo trên điện thoại của bạn và làm theo các bước hướng dẫn.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="menu3" class="tab-pane fade">
+
+                        <div class="accordion" id="accordion3">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        <b>Xe đạp có an toàn không?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Trước khi đi xe, hãy kiểm tra nhanh. Nếu bạn thấy dấu hiệu hư hỏng vui lòng báo cáo trong ứng dụng hoặc thông báo cho bộ phận dịch vụ khách hàng tại https://tngo.vn/ hoặc gọi cho chúng tôi theo số Hotline: 1900 633 548</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        <b>Tôi có cần số điện thoại di động Việt Nam không?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Có, bạn chỉ có thể đăng ký và mở khóa xe đạp bằng số Việt Nam. Điều duy nhất bạn phải làm là tải app TNGo về máy của bạn và thực hiện các thao tác theo hướng dẫn..</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <b>Điều gì xảy ra với tài khoản TNGo cũ của tôi?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Hồ sơ của bạn đã được lưu, nhưng bạn cần kích hoạt lại. Liên hệ trợ giúp tại đây.</p>
+                                        <p><b>E-mail:</b> info@vantaiso.com.vn</p>
+                                        <p><b>Phone hotline number:</b> 1900633548</p>
+                                        <p><b>Web:</b> <a href="https://tngo.vn" target="_blank">https://tngo.vn</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        <b>Chúng tôi có thể đặt chỗ cho nhiều Khách du lịch của chúng tôi cùng lúc không?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Với giải pháp kinh doanh của chúng tôi, bạn có thể tạo và phân phối xe bằng việc  mua gói vé nhóm hoặc gọi cho hotline 1900 633 548 để được hỗ trợ.</p>
+                                        <p>Truy cập https://tngo.vn/ để biết thêm thông tin.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        <b>Tại sao tôi không nhận được mã otp?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Đôi khi phải mất vài phút trước khi mã otp được gửi đến điện thoại của bạn. Chờ và thử lại nếu bạn gặp sự cố.</p>
+                                        <p>Mục đích của mã otp là để xác minh rằng đó là bạn. Pass cá nhân được sử dụng khi bạn đăng nhập vào tài khoản TNGo của mình. Quét mã QR được sử dụng trực tiếp trên các trạm để mở khóa xe đạp.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        <b>Làm thế nào tôi có thể cập nhật thông tin TNGo?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Theo dõi chúng tôi trên Facebook để cập nhật về những gì đang diễn ra.</p>
+                                        <p><a href="https://www.facebook.com/TNGo-137103531850759" target="_blank">FanPage Facebook</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                        <b>Tôi có thêm câu hỏi!</b>
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Gửi tin nhắn cho chúng tôi ở đây trên trang này hoặc trong ứng dụng. Bạn cũng có thể gửi email tới info@vantaiso.com.vn</p>
+                                        <p>Chúng tôi rất mong nhận được phản hồi từ bạn và sẽ trả lời bạn nhanh nhất có thể!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 @* ĐIỀU KHOẢN SỬ DỤNG *@

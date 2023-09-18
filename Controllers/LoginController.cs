@@ -34,7 +34,7 @@ namespace QA.TNGo_v2.Controllers
         {
             if (ModelState.IsValid)
             {
-                List<Login> db_pass = _context.Login.ToList();
+                List<Login> db_pass = await _context.Login.ToListAsync();
                 //pass mình nhập
                 var f_password = GetMD5(login.Password);
                 var result = (from w in _context.Login

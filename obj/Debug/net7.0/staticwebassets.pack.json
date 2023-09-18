@@ -25801,6 +25801,10 @@
       "PackagePath": "staticwebassets\\css\\fonts\\font-awesome\\4.7.0\\fonts\\fontawesome-webfont.woff2"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\css\\manual.css",
+      "PackagePath": "staticwebassets\\css\\manual.css"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\css\\page\\countdown.css",
       "PackagePath": "staticwebassets\\css\\page\\countdown.css"
     },
