@@ -2,7 +2,7 @@
 @model IEnumerable<QA.TNGo_v2.Models.BlogManager>
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    var category = (Category)ViewData["Category"];
+    var categories = (List<Category>)ViewData["Category"];
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
@@ -36,35 +36,42 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Summary)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Banner)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Author)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DatePosted)
-            </td>
-            <td>
-                @if (category != null && category.ID == item.Category_ID)
-                {
-                    @category.Name
-                }
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Summary)
+                </td>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem=> item.Banner)" style="width:100px;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DatePosted)
+                </td>
+                <td>
+                    @if (categories != null)
+                    {
+                        @foreach (var cat in categories)
+                        {
+                            @if (cat.ID == item.Category_ID)
+                            {
+                                @cat.Name
+                            }
+                        }
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

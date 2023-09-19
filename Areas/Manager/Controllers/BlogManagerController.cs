@@ -24,7 +24,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("")]
         public async Task<IActionResult> Index()
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             return _context.BlogManager != null ?
                         View(await _context.BlogManager.ToListAsync()) :
@@ -35,7 +35,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("Details")]
         public async Task<IActionResult> Details(int? id)
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             if (id == null || _context.BlogManager == null)
             {
@@ -56,7 +56,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("Create")]
         public IActionResult Create()
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             return View();
         }
@@ -68,7 +68,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Name,Summary,Content,Banner,Author,DatePosted,Category_ID")] BlogManager blogManager)
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("Edit")]
         public async Task<IActionResult> Edit(int? id)
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             if (id == null || _context.BlogManager == null)
             {
@@ -105,7 +105,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Summary,Content,Banner,Author,DatePosted,Category_ID")] BlogManager blogManager)
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             if (id != blogManager.ID)
             {
@@ -140,7 +140,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             if (id == null || _context.BlogManager == null)
             {
@@ -162,7 +162,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            Category categoryList = _context.Category.FirstOrDefault();
+            List<Category> categoryList = _context.Category.ToList();
             ViewData["Category"] = categoryList;
             if (_context.BlogManager == null)
             {
