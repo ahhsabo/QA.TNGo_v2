@@ -1,6 +1,8 @@
-﻿@model IEnumerable<QA.TNGo_v2.Models.BlogManager>
+﻿@using QA.TNGo_v2.Models
+@model IEnumerable<QA.TNGo_v2.Models.BlogManager>
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
+    var category = (Category)ViewData["Category"];
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
@@ -27,6 +29,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.DatePosted)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category_ID)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -47,6 +52,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DatePosted)
+            </td>
+            <td>
+                @if (category != null && category.ID == item.Category_ID)
+                {
+                    @category.Name
+                }
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

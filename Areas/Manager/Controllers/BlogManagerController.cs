@@ -24,6 +24,8 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("")]
         public async Task<IActionResult> Index()
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             return _context.BlogManager != null ?
                         View(await _context.BlogManager.ToListAsync()) :
                         Problem("Entity set 'ApplicationContext.BlogManager'  is null.");
@@ -33,6 +35,8 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("Details")]
         public async Task<IActionResult> Details(int? id)
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             if (id == null || _context.BlogManager == null)
             {
                 return NotFound();
@@ -52,6 +56,8 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("Create")]
         public IActionResult Create()
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             return View();
         }
 
@@ -60,8 +66,10 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [Route("Create"), HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Summary,Content,Banner,Author,DatePosted")] BlogManager blogManager)
+        public async Task<IActionResult> Create([Bind("ID,Name,Summary,Content,Banner,Author,DatePosted,Category_ID")] BlogManager blogManager)
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             if (ModelState.IsValid)
             {
                 _context.Add(blogManager);
@@ -75,6 +83,8 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [Route("Edit")]
         public async Task<IActionResult> Edit(int? id)
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             if (id == null || _context.BlogManager == null)
             {
                 return NotFound();
@@ -93,8 +103,10 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [Route("Edit"), HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Summary,Content,Banner,Author,DatePosted")] BlogManager blogManager)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Summary,Content,Banner,Author,DatePosted,Category_ID")] BlogManager blogManager)
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             if (id != blogManager.ID)
             {
                 return NotFound();
@@ -125,8 +137,11 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
 
         // GET: User/BlogManager/Delete/5
         [Route("Delete")]
+
         public async Task<IActionResult> Delete(int? id)
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             if (id == null || _context.BlogManager == null)
             {
                 return NotFound();
@@ -147,6 +162,8 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            Category categoryList = _context.Category.FirstOrDefault();
+            ViewData["Category"] = categoryList;
             if (_context.BlogManager == null)
             {
                 return Problem("Entity set 'ApplicationContext.BlogManager'  is null.");

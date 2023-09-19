@@ -1,6 +1,8 @@
-﻿@model QA.TNGo_v2.Models.BlogManager
+﻿@using QA.TNGo_v2.Models
+@model QA.TNGo_v2.Models.BlogManager
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
+    var category = (Category)ViewData["Category"];
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
@@ -46,6 +48,15 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.DatePosted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Category_ID)
+        </dt>
+        <dd>
+            @if (category.ID == Model.Category_ID)
+            {
+                @category.Name
+            }
         </dd>
     </dl>
     

@@ -11,5 +11,7 @@ namespace QA.TNGo_v2.Models
         public string? Banner { get; set; }
         public string? Author { get; set; }
         public DateTime? DatePosted { get; set; }
+        public int? Category_ID { get; set; }
+
     }
 }
