@@ -1,9 +1,11 @@
-﻿@using QA.TNGo_v2.Models
+﻿@using Microsoft.AspNetCore.Html
+@using QA.TNGo_v2.Models
 @model QA.TNGo_v2.Models.BlogManager
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    var category = (Category)ViewData["Category"];
+    var categories = (List<Category>)ViewData["Category"];
     Layout = "~/Views/Shared/_Admin.cshtml";
+    var str = new HtmlString(@Model.Content);
 }
 
 <h2>Delete</h2>
@@ -29,7 +31,7 @@
             @Html.DisplayNameFor(model => model.Content)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Content)
+            @str
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Banner)
@@ -53,13 +55,19 @@
             @Html.DisplayNameFor(model => model.Category_ID)
         </dt>
         <dd>
-            @if (category.ID == Model.Category_ID)
+            @if (categories != null)
             {
-                @category.Name
+                @foreach (var cate in categories)
+                {
+                    @if (cate.ID == Model.Category_ID)
+                    {
+                        @cate.Name
+                    }
+                }
             }
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
         <input type="submit" value="Delete" class="btn btn-danger my-3" /> |

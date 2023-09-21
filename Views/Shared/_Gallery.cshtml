@@ -1,0 +1,84 @@
+﻿<!--  Extra Large modal example -->
+<div class="modal fade bs-example-modal-xl" tabindex="-1" role="dialog"
+     aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myExtraLargeModalLabel">
+                    Extra
+                    large
+                    modal
+                </h5>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row" id="imgRow">
+ @*                    <div class="col-3">
+                        <img src="https://tngo.vn/image/Rectangle%20633.jpg" />
+                    </div> *@
+
+                </div>
+                
+
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0);"
+                   class="btn btn-link link-success fw-medium"
+                   data-bs-dismiss="modal">
+                    <i class="ri-close-line me-1 align-middle"></i>
+                    Close
+                </a>
+                <button type="button" class="btn btn-primary ">
+                    Save
+                    changes
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    function GetAllImages() {
+        $.ajax({
+            type: 'GET',
+            url: '/Admin/Manager/FileManager/Images/',
+            dataType: 'json',
+            traditional: true,
+            success: function (data) {
+                // results = data;
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                    let dataName = data[i].name;
+                    let dataUrl = data[i].url;
+                    let html = `<div class="col-3">
+                                        <img src="${dataUrl}" />
+                        </div>`;
+                    $(html).appendTo("#imgRow");
+                }
+            },
+            error: function (data) {
+                alert('Error.');
+            },
+            done: function (data) {
+                results = data;
+                console.log(data);
+            },
+        })
+        // var jqxhr = $.ajax("/Admin/Manager/FileManager/Images/")
+        //     .done(function (data) {
+        //         console.log(data);
+        //         console.log("qqqqqq");
+        //         alert("success");
+        //     })
+        //     .fail(function () {
+        //         alert("error");
+        //     })
+        //     .always(function () {
+        //         // alert("complete");
+        //     });
+    };
+
+
+    GetAllImages()
+</script>

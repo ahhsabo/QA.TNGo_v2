@@ -27,7 +27,7 @@ namespace QA.TNGo_v2.Controllers
                           Problem("Entity set 'ApplicationContext.Product'  is null.");
         }
 
-        // This method will upload the image and data to the folder and database
+        //// This method will upload the image and data to the folder and database
         //[HttpPost]
         //public ActionResult Index(HttpPostedFileBase file)
         //{
