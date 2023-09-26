@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using QA.TNGo_v2.Models;
 
 namespace QA.TNGo_v2.Areas.Manager.Controllers
@@ -14,10 +15,11 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
     public class BlogManagerController : Controller
     {
         private readonly ApplicationContext _context;
-
-        public BlogManagerController(ApplicationContext context)
+        private readonly IWebHostEnvironment _environment;
+        public BlogManagerController(ApplicationContext context, IWebHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         // GET: User/BlogManager
@@ -177,6 +179,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        
 
         private bool BlogManagerExists(int id)
         {

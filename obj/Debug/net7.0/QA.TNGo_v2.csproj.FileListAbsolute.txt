@@ -257,6 +257,7 @@ C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\staticwebassets.pack
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\scopedcss\Views\Shared\_Admin.cshtml.rz.scp.css
+C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\scopedcss\Views\Shared\_Gallery.cshtml.rz.scp.css
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\scopedcss\bundle\QA.TNGo_v2.styles.css
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\scopedcss\projectbundle\QA.TNGo_v2.bundle.scp.css
@@ -266,4 +267,3 @@ C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\refint\QA.TNGo_v2.dl
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\QA.TNGo_v2.pdb
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\QA.TNGo_v2.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\ref\QA.TNGo_v2.dll
-C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\scopedcss\Views\Shared\_Gallery.cshtml.rz.scp.css

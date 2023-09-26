@@ -10909,6 +10909,10 @@
       "PackagePath": "staticwebassets\\Upload\\TNGO_rentBike.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\Upload\\fc358790-3dab-473c-8857-80aed694dfa7.jpg",
+      "PackagePath": "staticwebassets\\Upload\\fc358790-3dab-473c-8857-80aed694dfa7.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\Upload\\tngo-bg-event.jpg",
       "PackagePath": "staticwebassets\\Upload\\tngo-bg-event.jpg"
     },
@@ -35119,6 +35123,10 @@
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\images\\closeBtn.png",
       "PackagePath": "staticwebassets\\images\\closeBtn.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\images\\dae994d0-7ff6-4aa3-88e1-759416fb5163.png",
+      "PackagePath": "staticwebassets\\images\\dae994d0-7ff6-4aa3-88e1-759416fb5163.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\images\\dnnSpinnerDownArrow.png",

@@ -5,33 +5,41 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="myExtraLargeModalLabel">
-                    Extra
-                    large
-                    modal
+                    Thư viện ảnh
                 </h5>
                 <button type="button" class="btn-close"
                         data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
+
+            @* upload = ajax *@
+@*                          @using (Html.BeginForm("Upload", "FileManager", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <input type="file" name="imageFile" />
+                <input type="button" class="btn btn-primary" onclick="UploadAjax()" id="uploadButton" />
+            }  *@
+            <form method="POST" enctype="multipart/form-data" class="form-horizontal wpc_contact" id="imageUploadForm">
+                <input type="file" name="imageFile" id="imageFile" accept="image/*" />
+                <button type="button" id="uploadButton" class="btn btn-primary" onclick="UploadAjax()">Upload</button>
+            </form>
+            <div id="message"></div>
+
+
+            @* Body *@
             <div class="modal-body">
                 <div class="row" id="imgRow">
- @*                    <div class="col-3">
-                        <img src="https://tngo.vn/image/Rectangle%20633.jpg" />
-                    </div> *@
-
                 </div>
-                
-
             </div>
+            @* Footer *@
             <div class="modal-footer">
                 <a href="javascript:void(0);"
                    class="btn btn-link link-success fw-medium"
                    data-bs-dismiss="modal">
                     <i class="ri-close-line me-1 align-middle"></i>
-                    Close
+                    Đóng
                 </a>
                 <button type="button" class="btn btn-primary ">
-                    Save
-                    changes
+                    Chọn
                 </button>
             </div>
         </div><!-- /.modal-content -->
@@ -47,38 +55,154 @@
             traditional: true,
             success: function (data) {
                 // results = data;
-                console.log(data);
                 for (var i = 0; i < data.length; i++) {
                     let dataName = data[i].name;
-                    let dataUrl = data[i].url;
-                    let html = `<div class="col-3">
-                                        <img src="${dataUrl}" />
-                        </div>`;
+                    let dataUrl = data[i].url;;
+                    let html =
+                        `<div class="col-2">
+                    <label class="option_item">
+                        <input name="imageListId" type="checkbox" class="checkbox">
+                        <div class="option_inner card">
+                            <span class=""></span>
+                            <div class="image-sample" style="position:relative;">
+                                    <img  class="card-img-top" src="${dataUrl}" style="width:100%;">
+                                <div class="card-body">
+                                    <p class="card-text" style="text-align:center; margin-top:5px;">${dataName}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>`;
                     $(html).appendTo("#imgRow");
                 }
             },
             error: function (data) {
-                alert('Error.');
+                alert('Error!');
             },
             done: function (data) {
                 results = data;
                 console.log(data);
             },
         })
-        // var jqxhr = $.ajax("/Admin/Manager/FileManager/Images/")
-        //     .done(function (data) {
-        //         console.log(data);
-        //         console.log("qqqqqq");
-        //         alert("success");
-        //     })
-        //     .fail(function () {
-        //         alert("error");
-        //     })
-        //     .always(function () {
-        //         // alert("complete");
-        //     });
     };
-
-
     GetAllImages()
+    $("#imgRow").on('click', 'input[type="checkbox"]', function () {
+        $('input[type="checkbox"]').not(this).prop('checked', false);
+    });
+
+    function UploadAjax() {
+        //if success => call GetAllImages
+        //else error message
+        var formData = new FormData();
+        console.log($('#imageFile')[0].files[0]);
+        // Attach file
+        formData.append('imageFile', $('#imageFile')[0].files[0]);
+        $.ajax({
+            type: 'POST',
+            url: '/Admin/Manager/FileManager/UploadImage',
+            data: formData,
+            contentType: false,
+            processData: false,
+            traditional: true,
+            success: function (data) {
+                // GetAllImages()
+                console.log(data);
+                alert('Success!');
+            },
+            error: function (data) {
+                alert('Error!');
+            },
+            done: function (data) {
+                results = data;
+                alert('Done!');
+                console.log(data);
+            },
+        })
+        };
+
+
+    // document.getElementById("uploadButton").addEventListener("click", function () {
+    //     var imageFile = document.getElementById("imageFile");
+    //     if (imageFile.files.length > 0) {
+    //         var formData = new FormData();
+    //         formData.append("imageFile", imageFile.files[0]);
+
+    //          var xhr = new XMLHttpRequest();
+    //         xhr.open("POST", "/Admin/Manager/FileManager/Upload", true); // Replace with your controller and action method
+
+    //         xhr.onload = function () {
+    //             if (xhr.status === 200) {
+    //                 document.getElementById("message").innerHTML = xhr.responseText;
+    //             } else {
+    //                 document.getElementById("message").innerHTML = "Error uploading image.";
+    //             }
+    //         };
+
+    //         xhr.send(formData);
+    //     } else {
+    //         document.getElementById("message").innerHTML = "Please select a valid image file.";
+    //     }
+    // });
+
+
 </script>
+
+<style>
+    .option_item {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+        .option_item .checkbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .option_item .option_inner {
+            height: 61%;
+            width: 100%;
+            background: #fff;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            color: #585c68;
+            display: block;
+            border: 5px solid transparent;
+            position: relative;
+        }
+
+        .option_item .checkbox:checked ~ .option_inner {
+            border-color: #20df80;
+            color: #20df80;
+        }
+
+        .option_item .option_inner .tickmark {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            border: 20px solid;
+            border-color: #20df80 transparent transparent #20df80;
+            display: none;
+        }
+
+            .option_item .option_inner .tickmark:before {
+                content: "";
+                position: absolute;
+                top: -18px;
+                left: -18px;
+                width: 15px;
+                height: 5px;
+                border: 3px solid;
+                border-color: transparent transparent #fff #fff;
+                transform: rotate(-45deg);
+            }
+
+        .option_item .checkbox:checked ~ .option_inner .tickmark {
+            display: block;
+        }
+
+</style>

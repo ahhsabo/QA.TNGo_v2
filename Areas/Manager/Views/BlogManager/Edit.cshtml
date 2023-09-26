@@ -5,7 +5,6 @@
 @{
     var categories = (List<Category>)ViewData["Category"];
     Layout = "~/Views/Shared/_Admin.cshtml";
-    var str = new HtmlString(@Model.Content);
 }
 @section Scripts{
     <script>
@@ -17,7 +16,6 @@
             .catch(error => {
                 console.error(error);
             });
-
     </script>
 }
 
@@ -31,7 +29,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
             <!-- Extra Large modal -->
-            <button type="button" class="btn btn-info " data-bs-toggle="modal"
+            <button type="button" class="btn btn-info" data-bs-toggle="modal"
                     data-bs-target=".bs-example-modal-xl">
                 Vào album ảnh
             </button>
