@@ -1,6 +1,7 @@
 ﻿<!--  Extra Large modal example -->
+<div class="galleryContainer" id="Gallerycontainer">
 <div class="modal fade bs-example-modal-xl" tabindex="-1" role="dialog"
-     aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+     aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" >
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -11,13 +12,6 @@
                         data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-
-            @* upload = ajax *@
-@*                          @using (Html.BeginForm("Upload", "FileManager", FormMethod.Post, new { enctype = "multipart/form-data" }))
-            {
-                <input type="file" name="imageFile" />
-                <input type="button" class="btn btn-primary" onclick="UploadAjax()" id="uploadButton" />
-            }  *@
             <form method="POST" enctype="multipart/form-data" class="form-horizontal wpc_contact" id="imageUploadForm">
                 <input type="file" name="imageFile" id="imageFile" accept="image/*" />
                 <button type="button" id="uploadButton" class="btn btn-primary" onclick="UploadAjax()">Upload</button>
@@ -38,14 +32,15 @@
                     <i class="ri-close-line me-1 align-middle"></i>
                     Đóng
                 </a>
-                <button type="button" class="btn btn-primary ">
+                <button type="button" id="selectButton" class="btn btn-primary ">
                     Chọn
                 </button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</div>
+
 <script>
     function GetAllImages() {
         $.ajax({
@@ -105,9 +100,8 @@
             processData: false,
             traditional: true,
             success: function (data) {
-                // GetAllImages()
-                console.log(data);
                 alert('Success!');
+                window.location.reload();
             },
             error: function (data) {
                 alert('Error!');
@@ -115,36 +109,9 @@
             done: function (data) {
                 results = data;
                 alert('Done!');
-                console.log(data);
             },
         })
         };
-
-
-    // document.getElementById("uploadButton").addEventListener("click", function () {
-    //     var imageFile = document.getElementById("imageFile");
-    //     if (imageFile.files.length > 0) {
-    //         var formData = new FormData();
-    //         formData.append("imageFile", imageFile.files[0]);
-
-    //          var xhr = new XMLHttpRequest();
-    //         xhr.open("POST", "/Admin/Manager/FileManager/Upload", true); // Replace with your controller and action method
-
-    //         xhr.onload = function () {
-    //             if (xhr.status === 200) {
-    //                 document.getElementById("message").innerHTML = xhr.responseText;
-    //             } else {
-    //                 document.getElementById("message").innerHTML = "Error uploading image.";
-    //             }
-    //         };
-
-    //         xhr.send(formData);
-    //     } else {
-    //         document.getElementById("message").innerHTML = "Please select a valid image file.";
-    //     }
-    // });
-
-
 </script>
 
 <style>

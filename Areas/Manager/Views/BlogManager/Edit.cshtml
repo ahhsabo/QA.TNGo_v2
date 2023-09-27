@@ -7,15 +7,23 @@
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
 @section Scripts{
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <script>
-        ClassicEditor
-            .create(document.querySelector('#txt_content'))
-            .then(editor => {
-                console.log(editor);
-            })
-            .catch(error => {
-                console.error(error);
+        $(document).ready(function () {
+            $('#txt_content').summernote({
+                height: 300,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']]
+                ]
             });
+        });
     </script>
 }
 
@@ -70,9 +78,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="Category_ID" class="control-label"></label><br>
-                @foreach(var cate in categories){
+                @foreach (var cate in categories)
+                {
                     <input type="radio" asp-for="Category_ID" value="@cate.ID" id="@cate.ID" />
-                    <label>@cate.Name</label><br/>
+                    <label>@cate.Name</label>
+
+                    <br />
                 }
                 <span asp-validation-for="Category_ID" class="text-danger"></span>
             </div>
