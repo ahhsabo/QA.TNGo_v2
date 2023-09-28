@@ -7,13 +7,12 @@
     });
 
     function getData(pageIndex) {
-        const language = $('#currentLanguage').val();
-        $.get(`/news/list?pageIndex=${pageIndex}&language=${language}`).done(xhr => {
+        $.get(`/news/list?pageIndex=${pageIndex}`).done(xhr => {
             let listNews = "";
             if (xhr.data.length > 0) {
                 $.each(xhr.data, (index, item) => {
                     listNews += `<div class="col-12 col-sm-4 col-md-4 mb-3">
-                                            <a href="/${language}/news/${item?.link?.slug}.html">
+                                            <a href="/news/${item?.link?.slug}.html">
                                                 <div class="img-wrap">
                                                     <img src="${item.banner}" class="img-fluid" width="100%" />
                                                 </div>
@@ -21,7 +20,7 @@
                                                 <div class="fw-semibold text-break">${item.name}</div>
                                                 <div><i>${new Date(item.datePosted).toLocaleDateString("en-GB")}</i></div>
                                             </a>
-                                        </div>`;
+                                </div>`;
                 });
             } else {
                 listNews = `<h5 class="text-danger text-center"><b>KHÔNG TÌM THẤY BÀI VIẾT NÀO!</b></h5>`;
