@@ -5,11 +5,11 @@ using System.Diagnostics;
 
 namespace QA.TNGo_v2.Controllers
 {
-    public class AdminHomeController : Controller
+    public class HomeController : Controller
     {
-        private readonly ILogger<AdminHomeController> _logger;
+        private readonly ILogger<HomeController> _logger;
 
-        public AdminHomeController(ILogger<AdminHomeController> logger)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }

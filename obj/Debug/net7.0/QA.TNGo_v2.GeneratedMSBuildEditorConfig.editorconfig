@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\GitHub\QA.TNGo_v2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Base/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFzZVxWaWV3c1xEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/BlogManager/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xCbG9nTWFuYWdlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,24 +44,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xCbG9nTWFuYWdlclxVcGxvYWRJbWFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/ContactManager/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0TWFuYWdlclxDcmVhdGUuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/Contact/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/ContactManager/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0TWFuYWdlclxEZWxldGUuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/Contact/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/ContactManager/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0TWFuYWdlclxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/Contact/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/ContactManager/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0TWFuYWdlclxFZGl0LmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/Contact/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/ContactManager/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0TWFuYWdlclxJbmRleC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xDb250YWN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/Manager/Views/FAQ/Create.cshtml]
@@ -122,10 +126,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Areas/User/Views/UserManager/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyTWFuYWdlclxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Views/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/QA.TNGo_v2/Views/Category/Index.cshtml]

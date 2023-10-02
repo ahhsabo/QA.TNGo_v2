@@ -8,10 +8,9 @@
     var str = new HtmlString(@Model.Content);
 }
 
-<h2>Details</h2>
+<h2>CHI TIẾT</h2>
 
 <div>
-    <h4>BlogManager</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -65,6 +64,5 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Chỉnh sửa</a>
 </div>

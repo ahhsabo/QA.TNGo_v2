@@ -45,7 +45,7 @@
     function GetAllImages() {
         $.ajax({
             type: 'GET',
-            url: '/Admin/Manager/FileManager/Images/',
+            url: '/Admin/Base/FileManager/Images/',
             dataType: 'json',
             traditional: true,
             success: function (data) {
@@ -94,7 +94,7 @@
         formData.append('imageFile', $('#imageFile')[0].files[0]);
         $.ajax({
             type: 'POST',
-            url: '/Admin/Manager/FileManager/UploadImage',
+            url: '/Admin/Base/FileManager/UploadImage',
             data: formData,
             contentType: false,
             processData: false,
