@@ -1,5 +1,5 @@
-﻿@* @model IEnumerable<QA.SportStore.Models.Price> *@
-
+﻿@model QA.TNGo_v2.Models.Contact
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Index";
 }
@@ -8,48 +8,50 @@
     <div class="row">
         <div class="col-12 col-sm-6 my-3">
 
-            <form form-edit="" action="/vi/Contact/Create" method="post">
-
-
-
+            <form form-edit="" asp-action="Index" method="post">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Họ và tên <strong class="text-danger">*</strong></label>
-                    <input type="text" class="form-control" id="name" maxlength="50" required="required" data-val="true" data-val-length="The field Name must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="The Name field is required." name="Name" value="">
-                    <small><span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span></small>
+                    <label asp-for="Name" class="form-label">Họ và tên <strong class="text-danger">*</strong></label>
+                    <input asp-for="Name" type="text" class="form-control" id="name" maxlength="50" required="required" data-val="true" data-val-length="The field Name must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="The Name field is required." name="Name" value="">
+                    <small><span class="field-validation-valid" asp-validation-for="Name" data-valmsg-for="Name" data-valmsg-replace="true"></span></small>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email <strong class="text-danger">*</strong></label>
-                            <input type="email" class="form-control" id="email" maxlength="128" required="required" data-val="true" data-val-length="The field Email must be a string with a maximum length of 128." data-val-length-max="128" data-val-required="The Email field is required." name="Email" value="">
-                            <small><span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span></small>
+                            <label asp-for="Email" class="form-label">Email <strong class="text-danger">*</strong></label>
+                            <input asp-for="Email" type="email" class="form-control" id="email" maxlength="128" required="required" data-val="true" data-val-length="The field Email must be a string with a maximum length of 128." data-val-length-max="128" data-val-required="The Email field is required." name="Email" value="">
+                            <small><span asp-validation-for="Email" class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span></small>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Số điện thoại</label>
-                            <input type="text" class="form-control" maxlength="20" id="phone" data-val="true" data-val-length="The field Phone must be a string with a maximum length of 20." data-val-length-max="20" name="Phone" value="">
-                            <small><span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span></small>
+                            <label asp-for="Phone" class="form-label">Số điện thoại</label>
+                            <input asp-for="Phone" type="text" class="form-control" maxlength="20" id="phone" data-val="true" data-val-length="The field Phone must be a string with a maximum length of 20." data-val-length-max="20" name="Phone" value="">
+                            <small><span asp-validation-for="Phone" class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span></small>
                         </div>
                     </div>
                 </div>
 
                 <div class="mb-3">
-                    <label for="title" class="form-label">Tiêu đề <strong class="text-danger">*</strong></label>
-                    <input type="text" class="form-control" id="title" required="required" maxlength="512" data-val="true" data-val-length="The field Title must be a string with a maximum length of 512." data-val-length-max="512" data-val-required="The Title field is required." name="Title" value="">
-                    <small><span class="field-validation-valid" data-valmsg-for="Title" data-valmsg-replace="true"></span></small>
+                    <label asp-for="Title" class="form-label">Tiêu đề <strong class="text-danger">*</strong></label>
+                    <input asp-for="Title" type="text" class="form-control" id="title" required="required" maxlength="512" data-val="true" data-val-length="The field Title must be a string with a maximum length of 512." data-val-length-max="512" data-val-required="The Title field is required." name="Title" value="">
+                    <small><span asp-validation-for="Title" class="field-validation-valid" data-valmsg-for="Title" data-valmsg-replace="true"></span></small>
                 </div>
 
                 <div class="mb-3">
-                    <label for="content" class="form-label">Nội dung <strong class="text-danger">*</strong></label>
-                    <textarea class="form-control" id="content" rows="3" required="required" maxlength="5000" data-val="true" data-val-length="The field Content must be a string with a maximum length of 5000." data-val-length-max="5000" data-val-required="The Content field is required." name="Content"></textarea>
-                    <small><span class="field-validation-valid" data-valmsg-for="Content" data-valmsg-replace="true"></span></small>
+                    <label asp-for="Content" class="form-label">Nội dung <strong class="text-danger">*</strong></label>
+                    <textarea asp-for="Content" class="form-control" id="content" rows="3" required="required" maxlength="5000" data-val="true" data-val-length="The field Content must be a string with a maximum length of 5000." data-val-length-max="5000" data-val-required="The Content field is required." name="Content"></textarea>
+                    <small><span asp-validation-for="Content" class="field-validation-valid" data-valmsg-for="Content" data-valmsg-replace="true"></span></small>
+                </div>
+                <div class="form-group d-none">
+                    <label asp-for="CreatedDate" class="control-label"></label>
+                    <input asp-for="CreatedDate" class="form-control" />
+                    <span asp-validation-for="CreatedDate" class="text-danger"></span>
                 </div>
 
                 <input type="hidden" name="GoogleCaptChaToken" id="google_captcha_token" value="03ADUVZwD5gfV3IlpW0hpaGfQX16wNCaAqUzYLM3b2JSuj2R6Ytr5bGNjBsgUoNQLDGoKFcm25uZlbMW2I18_DJMoiH9D7Pn9VzLlF88HB0d7Sbh6qYR6womGvk9MNznOC1XEDQ3iS3SdKlfovcu_m4WXPF-3BEWOn0VRttEGewoBm1TsxhLEkGjvrQEh9k_BCQTWKdXiZuN0sHhb7lQwfqecRIU6_Wd5cs300Z6hYilwcmFCOxfB3PNgxoKhK6y-wse10wDctMAg3QjpS5f5Wob1GWNnP0sxQbbufZO636nA1Rspwctbzjqk9hAYuwSh8-kpq8cu9vm7lkI-cSQylumtI1DbGTAyWO2QfpWu4OX_aa92YMgmcXmEeVB06RUBxFSlotGEp8qdIOx23D5FXVUPVR76MOZnscf7NA6YSIabYHpnXK0nd45yslWTaPlxn23yjYtkqWG5ocOhtlA-bAwxXdBUvcczKi3EG3RYPoyTsdvAL0Z93wHbl6jm3hXeYqh-HBWcXjTNk4HbV2c20zeDK0sVK4a8xc_-m4_6-btfgSt6xQ51Flqg_sXmLRZ9tXhjBrpD0zI5mVZla0uS2sm73Tu7DKAYh9-YvLp5EIkv_WlWI8gN6XUCFNaRJxNqabwHg0INctpO5F8Nnmup8gm7qQJG8c1xD9OYqhOZGAsdEWpbXD9CTmK1eca-h_U14xU7IwE0zg6m4W3JExH4ORn3_oVws5PrSgL00JKu203J5JRVhJlPp7rceD6KCBANNISv8Y661Jv2JVcIPsY9i1VohEq6kpSauEOsnFIzGuszyfEchH8vtCcTuu8Pga3Wb0Qd-Li2DcMalrmKKaN7qP-YbT-gViYsAnWuJQfvpepoUfC8BmQaETIxos_O8CeZwL9a2xeMSIGk48klrCk6i_6fmG5UrpHY4mW1KH3t3C6eZK8wIQEhqeWaQbrhMMxNgg1iGvpC9ko2qxDzSKxoAsg77MXnICt0y8Bs5oe2hS2U7NesSjw-HmclX34X8wY0_YeVRMZoBZnEW-YekeApkmatG8Y0HMx-Cx-1kQhs5RMtwp-40DrL2UFJx53NAp-ZqZZSgR1H7og1w2rH4wr8nzUKv25wcNmKQb0J49vbg_DaMkFVkpArgZXw3f0mVAtly9ET6HUCNJbItw6plI6IUbTN_N_KZthi-IvT3GnuUf6Qi-wWJokbMWLgDJyrapwtKB5T0bXcAeB93JMdEhybBZcrQ0hXKGpoqJGoqVUUc4GZdfJOqcT1CQXs_EBnHUiFKx-oh8UoskH-bXU5W3syYxJZuVz5b7Z3OJS-2flEuxH1bLmYKCNh7HjLfTywymYnXtEsAQdhp-Z5suXTr1J24XqXAVE2t43UedPNFjzVCTtYdAbE1tbeHtAogE_6hEh6x5zWVYi14QsfJCb-5P1L9vAr_Fo-PnCiOSaVtQHUrUD2SfDpODyrtVlcd279ALg0AS97goY3Q_T71Gwyj4P66zvmqiQ2FvHFtc3fFmkhQ_52VWeW-rEoO5cQ">
 
-                <button class="btn btn-primary btn-lg w-100" type="submit">Gửi</button>
+                <button class="btn btn-primary btn-lg w-100" type="submit" value="Create" id="contactbtn">Gửi</button>
             </form>
 
         </div>

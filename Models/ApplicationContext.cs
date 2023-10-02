@@ -22,6 +22,7 @@ namespace QA.TNGo_v2.Models
         public DbSet<Models.BlogManager> BlogManager { get; set; }
         public DbSet<Models.FAQ> FAQ { get; set; }
         public DbSet<Models.Terms> Terms { get; set; }
-        public DbSet<QA.TNGo_v2.Models.ContactManager> ContactManager { get; set; } = default!;
+        public DbSet<Models.Contact> Contact { get; set; }
+        public DbSet<Models.ContactManager> ContactManager { get; set; }
     }
 }

@@ -36,6 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Base\" />
     <Folder Include="wwwroot\Upload\" />
   </ItemGroup>
 
