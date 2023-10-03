@@ -38,8 +38,9 @@ namespace QA.TNGo_v2.Controllers
                 //pass mình nhập
                 var f_password = GetMD5(login.Password);
                 var result = (from w in _context.Login
-                    where w.UserName == login.UserName && w.Password == f_password
-                    select w).FirstOrDefault();
+                              where w.UserName == login.UserName && w.Password == f_password
+                              select w).FirstOrDefault();
+
                 if (result != null)
                 {
                     Response.Cookies.Append("USER_LOGIN", "logged_in");
@@ -51,10 +52,47 @@ namespace QA.TNGo_v2.Controllers
                     return RedirectToAction("Index", "Login");
                 }
 
+
             }
             ModelState.AddModelError("", "Thao tác không hợp lệ. Vui lòng kiểm tra lại.");
             return RedirectToAction("Index", "Login");
         }
+
+
+
+
+
+        // GET: Logout
+        public IActionResult Logout()
+        {
+            if (ModelState.IsValid)
+            {
+                if (Request.Cookies["USER_LOGIN"] != null)
+                {
+                    Response.Cookies.Delete("USER_LOGIN");
+                    return RedirectToAction("Index", "Login");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Bạn chưa đăng nhập!");
+                    return RedirectToAction("Index", "Login");
+                }
+
+            }   
+            return RedirectToAction("Index", "Login");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         // GET: Login/Details/5
@@ -150,6 +188,9 @@ namespace QA.TNGo_v2.Controllers
             }
             return View(login);
         }
+
+
+
 
         // GET: Login/Delete/5
         public async Task<IActionResult> Delete(int? id)

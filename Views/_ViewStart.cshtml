@@ -1,3 +1,10 @@
 ﻿@{
     Layout = "_Layout";
 }
+ 
+ 
+@* @{
+    var yourCookieValue = Request.Cookies["USER_LOGIN", "logged_in"]?.Value;
+     //var yourCookieValue = HttpContext.Current.Request.Cookies["USER_LOGIN"]?.Value;
+     Layout = (yourCookieValue != null) ? "_Admin" : "_Layout";
+} *@

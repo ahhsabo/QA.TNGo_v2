@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head id="Head">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+    <title>TNGo - Xe đạp công nghệ số</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900" rel="stylesheet" />
+    <link rel='SHORTCUT ICON' href='~/favicon.ico' type='image/x-icon' />
+
+
+    <!-- Common -->
+    <link rel="stylesheet" href="/lib/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/fonts/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    <style>
+        .avatar-box {
+            padding: 2px;
+            border: 2px solid #5bd360;
+            border-radius: 50%;
+        }
+
+            .avatar-box img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+        .navbar a:hover {
+            background-color: #def4ff;
+        }
+
+        .nav-dropdown-content {
+            display: none;
+            position: absolute;
+            top: 55px;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .nav-dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .nav-dropdown-content a:hover {
+                    background-color: #c0ebff;
+                }
+
+        .nav-dropdown:hover .nav-dropdown-content {
+            display: block;
+        }
+
+        .formadmin:hover {
+            border: 5px dashed orange;
+        }
+
+        .formadmin .edit-icon-admin {
+            position: absolute;
+            z-index: 1000;
+        }
+
+            .formadmin .edit-icon-admin i {
+                background: #a9a9aa;
+                padding: 10px;
+                color: white;
+                border-radius: 50%;
+                display: none;
+            }
+    </style>
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <section id="Header">
+        <div class="container-fluid">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <div class="ps-5">
+                    <a title="Xe đạp công cộng TNGo" href="/" class="logo-avatar">
+                        <img class="imglogo" src="https://tngo.vn/Data/logo-vn.jpg" alt="TN-GO" style="width:150px;">
+                    </a>
+                </div>
+
+                <style>
+                    .Table {
+                        width: 100%;
+                    }
+
+                        .Table tr td {
+                            border: 1px solid #C2C2C2;
+                            padding: 5px;
+                        }
+                </style>
+                <div class="flex-fill d-none d-sm-block navbar">
+                    <div class="d-flex flex-row flex-wrap justify-content-end align-items-center fs-5 menu-bar main-menu-bar">
+                        <div class="h-100">
+                            <a class="nav-dropbtn h-100 py-3 px-2 px-md-4 menu-item" role="button" href="/usermanual">Hướng dẫn sử dụng</a>
+                        </div>
+                        <div class=""><a class="nav-dropbtn py-3 px-2 px-md-4 menu-item" role="button" href="/price">Bảng giá</a></div>
+                        <div class="nav-dropdown">
+                            <a class="nav-dropbtn nav-dropdown py-3 px-2 px-md-4 menu-item" role="button" href="#">Dịch vụ</a>
+                            <div class="nav-dropdown-content fs-6">
+                                <a href="/rank">Bảng xếp hạng</a>
+                                <a href="/tapgo">Thẻ trả trước TapGo</a>
+                                <a href="/rfid">Thẻ RFID</a>
+                                <a href="/rentBike">Dịch vụ - sự kiện</a>
+                                <a href="/tripCare">Bảo hiểm Trip Care</a>
+                            </div>
+                        </div>
+                        <div class=""><a class="nav-dropbtn py-3 px-2 px-md-4 menu-item" role="button" href="/station">Danh sách trạm</a></div>
+                        <div class=""><a class="nav-dropbtn py-3 px-2 px-md-4 menu-item" role="button" href="/news">Tin tức</a></div>
+                        <div class=""><a class="nav-dropbtn py-3 px-2 px-md-4 menu-item" role="button" href="/contact">Liên hệ</a></div>
+                        <div class="px-2 px-md-4 fs-6">
+                            <div class="avatar-box dropdown">
+                                <img src="https://api-mobile.tngo.vn/Data/Account/2023/9/6/avt_5d950355-2deb-4d9d-8ca7-a8e1615a7e12.jpg" type="button" data-bs-toggle="dropdown" aria-expanded="false" alt="avatar" onerror="this.onerror=null;this.src='/Content/Admin/images/no-avatar.jpg';">
+                                <ul class="dropdown-menu" style="right: 0 !important; left:unset">
+                                    <li><a class="dropdown-item" href="/RFID/MyRFIDCard">Thẻ của tôi</a></li>
+                                    <li><a class="dropdown-item" href="/Price/BuyTicket">Mua vé</a></li>
+                                    <li><a class="dropdown-item" href="/Payment">Nạp tiền</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/Login/Logout">Đăng xuất</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-block d-sm-none text-primary">
+                    <button class="btn btn-default" type="button">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Body">
+        <div class="main">
+            @RenderBody()
+        </div>
+
+    </section>
+
+    <div class="footter hidden-login">
+        <div class="tngoft">
+            <div class="container">
+                <div class="text-center text-white mb-3">© 2023 Xe đạp công cộng TNGo - Một sản phẩm của <a class="text-white" href="#" target="_blank" style="text-decoration:underline">Công ty cổ phần vận tải số Trí Nam</a></div>
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+
+                    <div class="flex-fill text-white"><img alt="" class="mb-2" src="/image/logoft.png" style="width:12rem"><div class=" mb-4" style="width:20rem;text-align: justify;">Xe đạp công cộng - Một loại hình giao thông đô thị mới văn minh, tiện lợi, tốt cho sức khỏe và thân thiện với môi trường.</div><a target="_blank" href="http://online.gov.vn/Home/WebDetails/84227"><img src="/image/logoSaleNoti.png" style="width:10rem"></a></div>
+                    <div class="flex-fill text-white footer-contact"><h2>Liên hệ</h2><div class="mb-3"><i class="fa-solid fa-phone"></i><a class="text-white" href="tel:1900633548">1900 633 548</a></div><div class="mb-3"><i class="fa-regular fa-envelope"></i><a class="text-white" href="mailto:info@vantaiso.com.vn">info@vantaiso.com.vn</a></div><div class="mb-3"><i class="fa-brands fa-facebook-f"></i><a class="text-white" href="https://www.facebook.com/tngo.vn" target="_blank">tngo.vn</a></div></div>
+
+                    <div class="flex-fill text-white mb-5">
+                        <h2>Liên kết nhanh</h2>
+                        <div class="row">
+                            <div class="col-6"><div class="mb-3"><a class="text-white" href="/usermanual">Hướng dẫn sử dụng</a></div><div class="mb-3"><a class="text-white" href="/station">Danh sách trạm</a></div><div class="mb-3"><a class="text-white" href="/news">Tin tức</a></div><div class="mb-3"><a class="text-white" href="/contact">Liên hệ</a></div></div>
+                            <div class="col-6"><div class="mb-3"><a class="text-white" href="/price">Bảng giá</a></div><div class="mb-3"><a class="text-white" href="/tapgo">Thẻ trả trước TapGo</a></div><div class="mb-3"><a class="text-white" href="/rfid">Thẻ RFID</a></div><div class="mb-3"><a class="text-white" href="/rank">Bảng xếp hạng</a></div></div>
+                        </div>
+                    </div>
+                    <div class="flex-fill text-white"><h2>Tải ứng dụng</h2><div class="d-flex flex-column justify-content-between"><div class="mb-2"><a href="https://apps.apple.com/vn/app/tngo/id1552166916" target="_blank"><img alt="" src="/image/app-ios.png" style="width:8rem"></a></div><a href="https://play.google.com/store/apps/details?id=com.tngo" target="_blank"><img alt="" src="/image/app-android.png" style="width:8rem"></a></div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Portals/_default/Skins/TN/resource/bootstrap.js?v=5.5.9"></script>
+<script src="/Portals/_default/Skins/TN/resource/owlcarousel/owl.carousel.min.js?v=5.5.9"></script>
+<script src="/js/site.js?v=1.0"></script>
+
+<script>
+    $(document).ready(
+        function () {
+            let owl = $('#manualsct');
+            owl.owlCarousel({
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                nav: false,
+                loop: true,
+                dots: true,
+                dotsData: true,
+                pagination: false,
+                margin: 0,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 1 },
+                    1000: { items: 1 }
+                }
+            })
+        }
+    )
+</script>
+
+<script>
+    $(function () {
+        let star = '.star',
+            selected = '.selected';
+
+        $(star).on('click', function () {
+            $(selected).each(function () {
+                $(this).removeClass('selected');
+            });
+            $(this).addClass('selected');
+        });
+    });
+</script>
+
+<script>
+    jQuery(document).ready(function () {
+        var top = $("#ControlBar").height();
+        if (top != null) {
+            top = top;
+        } else { top = 0; };
+        jQuery("#scroll-top").hide();
+        jQuery(function () {
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 163) {
+                    $(".vmenu").attr("style", "position:fixed;top:" + top + "px;padding-right:1px;")
+                } else { $(".vmenu").attr("style", "position:relative;top:0px;padding-right:0px;") }
+
+                if (jQuery(this).scrollTop() > 0) {
+                    jQuery('#scroll-top').fadeIn();
+                } else {
+                    jQuery('#scroll-top').fadeOut();
+                }
+            });
+        });
+    });
+</script>
+<script>
+    $(document).on("click", "#btn-modal-login,#RegisterPartial,#ForgotPasswordPartial", function () {
+        const language = $('#currentLanguage').val();
+        var url = "/" + language + "/AccountWeb/" + $(this).data("action");
+        $.ajax({
+            url: url,
+            success: function (data) {
+                $("#modal-login .modal-content").html(data);
+                $("#modal-login").modal("show");
+            }
+        });
+    });
+
+    $(document).on("click", "#btn-login", function () {
+        $.ajax({
+            url: "/AccountWeb/Login",
+            method: 'post',
+            data: $("#form-login").serialize(),
+            success: function (data) {
+                $("#modal-login .modal-content").html(data);
+            }
+        });
+    });
+</script>
+
+<!-- Google tag (gtag.js) -->
+<!-- Google analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TWRTC5649K"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TWRTC5649K');
+</script>
+<script src="~/assets/libs/ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+@await RenderSectionAsync("Scripts", required: false)

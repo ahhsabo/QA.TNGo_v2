@@ -4,6 +4,7 @@ namespace QA.TNGo_v2.Models
 {
     public class BlogManager
     {
+   
         public int ID { get; set; }
         public string? Name { get; set; }
         public string? Summary { get; set; }

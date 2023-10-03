@@ -33,7 +33,17 @@ namespace QA.TNGo_v2.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(contact);
+                var newPost = new Contact
+                {
+                    Id = contact.Id,
+                    Name = contact.Name,
+                    Phone = contact.Phone,
+                    Email = contact.Email,
+                    Title = contact.Title,
+                    Content = contact.Content,
+                    CreatedDate = DateTime.Now.Date
+                };
+                _context.Add(newPost);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

@@ -267,3 +267,4 @@ C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\refint\QA.TNGo_v2.dl
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\QA.TNGo_v2.pdb
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\QA.TNGo_v2.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\ref\QA.TNGo_v2.dll
+C:\Users\Admin\Documents\GitHub\QA.TNGo_v2\obj\Debug\net7.0\scopedcss\Views\Shared\_LayoutLogout.cshtml.rz.scp.css

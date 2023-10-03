@@ -1,15 +1,14 @@
-﻿@model QA.TNGo_v2.Models.Contact
-
+﻿@using QA.TNGo_v2.Models
+@model QA.TNGo_v2.Models.Contact
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
-<h2>Create</h2>
-
-<h4>Contact</h4>
+<h2>THÊM MỚI LIÊN HỆ</h2>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -43,16 +42,8 @@
                 <span asp-validation-for="CreatedDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Tạo mới" class="btn btn-primary my-3" />
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

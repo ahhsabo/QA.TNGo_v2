@@ -10,6 +10,7 @@ using QA.TNGo_v2.Models;
 namespace QA.TNGo_v2.Areas.Manager.Controllers
 {
     [Area("Manager")]
+    [Route("Admin/[Area]/[Controller]")]
     public class ContactController : Controller
     {
         private readonly ApplicationContext _context;
@@ -20,6 +21,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         }
 
         // GET: Manager/Contact
+        [Route("")]
         public async Task<IActionResult> Index()
         {
               return _context.Contact != null ? 
@@ -28,6 +30,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         }
 
         // GET: Manager/Contact/Details/5
+        [Route("Details")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Contact == null)
@@ -46,6 +49,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         }
 
         // GET: Manager/Contact/Create
+        [Route("Create")]
         public IActionResult Create()
         {
             return View();
@@ -54,7 +58,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         // POST: Manager/Contact/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [Route("Create"), HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Phone,Email,Title,Content,CreatedDate")] Contact contact)
         {
@@ -68,6 +72,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         }
 
         // GET: Manager/Contact/Edit/5
+        [Route("Edit")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Contact == null)
@@ -86,7 +91,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         // POST: Manager/Contact/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [Route("Edit"), HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Phone,Email,Title,Content,CreatedDate")] Contact contact)
         {
@@ -119,6 +124,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         }
 
         // GET: Manager/Contact/Delete/5
+        [Route("Delete")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Contact == null)
@@ -137,7 +143,7 @@ namespace QA.TNGo_v2.Areas.Manager.Controllers
         }
 
         // POST: Manager/Contact/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [Route("Delete"), HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

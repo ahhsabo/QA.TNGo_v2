@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    var myCookie = Context.Request.Cookies["USER_LOGIN"];
+
+}
+<!DOCTYPE html>
 <html lang="en">
 <head id="Head">
     <meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
@@ -127,16 +132,17 @@
                         <div class=""><a class="nav-dropbtn py-3 px-2 px-md-4 menu-item" role="button" href="/news">Tin tức</a></div>
                         <div class=""><a class="nav-dropbtn py-3 px-2 px-md-4 menu-item" role="button" href="/contact">Liên hệ</a></div>
                         <div class="px-2 px-md-4 fs-6">
-                            <div class="avatar-box dropdown">
-                                <img src="https://api-mobile.tngo.vn/Data/Account/2023/9/6/avt_5d950355-2deb-4d9d-8ca7-a8e1615a7e12.jpg" type="button" data-bs-toggle="dropdown" aria-expanded="false" alt="avatar" onerror="this.onerror=null;this.src='/Content/Admin/images/no-avatar.jpg';">
-                                <ul class="dropdown-menu" style="right: 0 !important; left:unset">
-                                    <li><a class="dropdown-item" href="/RFID/MyRFIDCard">Thẻ của tôi</a></li>
-                                    <li><a class="dropdown-item" href="/Price/BuyTicket">Mua vé</a></li>
-                                    <li><a class="dropdown-item" href="/Payment">Nạp tiền</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="/AccountWeb/Logout">Đăng xuất</a></li>
-                                </ul>
-                            </div>
+                            
+                                <div class="avatar-box dropdown">
+                                    <img src="https://api-mobile.tngo.vn/Data/Account/2023/9/6/avt_5d950355-2deb-4d9d-8ca7-a8e1615a7e12.jpg" type="button" data-bs-toggle="dropdown" aria-expanded="false" alt="avatar" onerror="this.onerror=null;this.src='/Content/Admin/images/no-avatar.jpg';">
+                                    <ul class="dropdown-menu" style="right: 0 !important; left:unset">
+                                        <li><a class="dropdown-item" href="/RFID/MyRFIDCard">Thẻ của tôi</a></li>
+                                        <li><a class="dropdown-item" href="/Price/BuyTicket">Mua vé</a></li>
+                                        <li><a class="dropdown-item" href="/Payment">Nạp tiền</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="/Login/Logout">Đăng xuất</a></li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>
