@@ -1,9 +1,229 @@
-﻿@* @model IEnumerable<QA.SportStore.Models.Price> *@
+﻿@using QA.TNGo_v2.Models
+@model List<QA.TNGo_v2.Models.Station>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<div class="">
-    <h2>Danh sách trạm</h2>
-</div>
+@section Styles{
+    <style>
+        #station-map {
+            height: 90vh;
+            background-color: grey;
+        }
+
+        .station-panel {
+            width: 400px;
+        }
+
+        .station-list {
+            height: 60vh;
+            overflow-y: auto;
+        }
+
+        .marker-title {
+            font-weight: bold;
+            color: #d52626;
+        }
+
+        @@media screen and (max-width: 480px) {
+            .station-panel {
+                width: 100%;
+            }
+        }
+    </style>
+}
+
+<section>
+    <div class="d-flex flex-column flex-sm-row">
+        <div class="station-panel">
+            <div>
+                <div class="text-center text-uppercase bg-primary text-bg-primary p-3 mb-3 fs-5">Danh sách trạm</div>
+
+@*                 <div class="px-3" id="search-box">
+                    <div class="my-2">
+                        <label class="form-label m-0"></label>
+                        <select class="form-select" name="projectId">
+                            <option value="0">Tất cả</option>
+                            @if (Model != null)
+                            {
+                                @foreach (var item in Model)
+                                {
+                                    <option value="@item.Id">@item.City</option>
+                                }
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1" class="form-label m-0"></label>
+                        <input type="text" class="form-control" name="key" placeholder="">
+                    </div>
+
+                    <div class="mb-2">  
+                        <button class="btn btn-block btn-primary w-100" id="btn-search-station"></button>
+                    </div>
+                </div> *@
+                
+                @* Trạm ở đây này *@
+                <div id="grid-view">
+                    @if (Model == null)
+                    {
+                        <div class="px-3 mb-2">
+                            <h6 class="text-end"><i>Tìm thấy <span class="text-danger fw-bold">0</span> trạm xe</i></h6>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="px-3 mb-2">
+                            <h6 class="text-end"><i>Tìm thấy <span class="text-success fw-bold">@Model.Count</span> trạm xe</i></h6>
+                        </div>
+
+                        <div class="station-list">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+ 
+                                                <table class="table table-striped mb-0">
+                                                    <tbody>
+                                                        @foreach(var item in Model)
+                                                        {
+                                                            <tr>
+                                                                <td class="px-3">
+                                                                    <div><b>@item.Name</b></div>
+                                                                    <div>@item.Address</div>
+                                                                </td>
+                                                                <td class="text-end px-3 align-middle">
+                                                                    <i class="fa-solid fa-location-dot fa-xl station-marker" role="button" title="Đi tới"
+                                                                       data-lat="@item.lat"
+                                                                       data-lng="@item.lng"
+                                                                       data-name="<div class='marker-title'>@item.Name</div><div>@item.Address</div>"
+                                                                       data-id="@item.Id">
+                                                                    </i>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="flex-fill" id="station-map"></div>
+    </div>
+</section>
+
+
+@section Scripts{
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwwqrcSxawUxiuymbokknvfjp9Q1ZnXWc&callback=initMap"></script>
+    <script type="text/javascript">
+        let g_map;
+        let g_icon, g_icon_lg;
+        let infoWindow;
+        let g_markers = [];
+        g_icon = "/image/map/marker.png";
+        g_icon_lg = "~/image/map/marker-2x.png";
+
+
+        $.ajax({
+            url: '/Station/GetStation',
+            type: 'GET',
+            success: function (data) {
+                //create a blank array
+                var markers = [];
+
+                //loop the list of addresses returned from Ajax request
+                $.each(data, function (index, item) {
+                    //create a blank array of address
+                    var marker = {};
+
+                    //fill data
+                    marker["Id"] = item.id;
+                    marker["Name"] = item.name;
+                    marker["lat"] = item.lat;
+                    marker["lng"] = item.lng;
+                    marker["City"] = item.city;
+                    marker["Address"] = item.address;
+                    marker["Code"] = item.code;
+                    //push the current marker details in markers array
+                    markers.push(marker);
+                })
+
+                //call Map function with all markers passed as list of arrays
+                initializeMap(markers);
+
+            }
+        });
+
+
+        function initializeMap(markers) {
+            //you can check your marker data in console
+            console.log(markers);
+
+            //Create Google map options
+            var GoogleMapOptions = {
+                center: new google.maps.LatLng(markers[3].lat, markers[3].lng),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            };
+
+            //create a variable of InfoWindow type to show data on clicking map icon
+            var infoWindow = new google.maps.InfoWindow();
+            var map = new google.maps.Map(document.getElementById("station-map"), GoogleMapOptions);
+
+            function moveToLocation(lat, lng) {
+                let center = new google.maps.LatLng(lat, lng);
+                g_map.panTo(center);
+            }
+
+            $(document).on("click", ".station-marker", function () {
+                let lat = $(this).data("lat");
+                let lng = $(this).data("lng");
+                let id = $(this).data("id");
+                let name = $(this).data("name");
+                //
+                let marker_selected = g_markers.find(x => x.id == id).marker;
+
+                if (g_markers.length > 0) {
+                    g_markers.forEach((item) => item.marker.setIcon(g_icon));
+                }
+                marker_selected.setIcon(g_icon_lg);
+
+                moveToLocation(lat, lng);
+
+                // show popup
+                infoWindow.close();
+                infoWindow.setContent(name);
+                infoWindow.open(marker_selected.map, marker_selected);
+            });
+
+            //loop through each marker data
+            for (i = 0; i < markers.length; i++) {
+               
+                var data = markers[i]
+                //set lat long of current marker
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    icon: g_icon,
+                    title: data.Address
+                });
+
+                (function (marker, data) {
+                    // add a on marker click event
+                    google.maps.event.addListener(marker, "click", function (e) {
+                        //show description
+                        infoWindow.close();
+                        infoWindow.setContent(data.Address);
+                        infoWindow.open(map, marker);
+                    });
+                })(marker, data);
+            }
+        }
+
+    </script>
+    
+}

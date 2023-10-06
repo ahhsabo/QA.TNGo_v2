@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using QA.TNGo_v2.Models;
 
 namespace QA.TNGo_v2
@@ -11,7 +12,7 @@ namespace QA.TNGo_v2
             builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

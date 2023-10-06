@@ -211,15 +211,7 @@
                         <div class="dropdown ms-sm-3 header-item topbar-user">
                             <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                <span class="d-flex align-items-center">
-                                    <img class="rounded-circle header-profile-user"
-                                         src="~/assets/images/users/avatar-11.jpg" alt="Header Avatar">
-                                    <span class="text-start ms-xl-2">
-                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">
-                                            Quang Anh Do
-                                        </span>
-                                    </span>
-                                </span>
+                                <img src="https://api-mobile.tngo.vn/Data/Account/2023/9/6/avt_5d950355-2deb-4d9d-8ca7-a8e1615a7e12.jpg" type="button" data-bs-toggle="dropdown" aria-expanded="false" alt="avatar" onerror="this.onerror=null;this.src='/Content/Admin/images/no-avatar.jpg';">
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
@@ -239,8 +231,8 @@
                                 <a class="dropdown-item" href="">
                                     <i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i><span class="align-middle">Settings</span>
                                 </a>
-                                <a class="dropdown-item" href="">
-                                    <i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span>
+                                <a class="dropdown-item" href="/Admin/Base/LoginAdmin/Logout">
+                                    <i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i><span class="align-middle" data-key="t-logout">Logout</span>
                                 </a>
                             </div>
                         </div>
@@ -347,7 +339,7 @@
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="Admin/User/UserManager" class="nav-link" data-key="t-calendar">
+                                        <a href="/Admin/User/UserManager" class="nav-link" data-key="t-calendar">
                                             Tài khoản
                                         </a>
                                     </li>
@@ -385,20 +377,6 @@
     <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top" style="background-color: #3897ff;border-radius: 100%;height: 50px;width: 50px;border: 1px solid;bottom:40px;">
         <i class="ri-arrow-up-line"></i>
     </button>
-    <!--end back-to-top-->
-    <!--preloader-->
-@*     <div id="preloader">
-        <div id="status">
-            <div class="spinner-border text-primary avatar-sm" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        </div>
-    </div> *@
-
-
-
-    <!-- Theme Settings -->
-    
 
     <!-- JAVASCRIPT -->
     <script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -34,25 +34,28 @@ namespace QA.TNGo_v2.Controllers
         {
             if (ModelState.IsValid)
             {
+                if(login.UserName !=null && login.Password !=null){
                 List<Login> db_pass = await _context.Login.ToListAsync();
                 //pass mình nhập
-                var f_password = GetMD5(login.Password);
-                var result = (from w in _context.Login
-                              where w.UserName == login.UserName && w.Password == f_password
-                              select w).FirstOrDefault();
-
-                if (result != null)
-                {
-                    Response.Cookies.Append("USER_LOGIN", "logged_in");
-                    return RedirectToAction("Index", "Home");
+                
+                    var f_password = GetMD5(login.Password);
+                    var result = (from w in _context.Login
+                                  where w.UserName == login.UserName && w.Password == f_password
+                                  select w).FirstOrDefault();
+                    if (result != null)
+                    {
+                        Response.Cookies.Append("USER_LOGIN", "logged_in");
+                        return RedirectToAction("Index", "Home");
+                    }
+                    if (result == null)
+                    {
+                        ModelState.AddModelError(string.Empty, "Tên đăng nhập hoặc mật khẩu không đúng");
+                    }
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return RedirectToAction("Index", "Login");
+                    ModelState.AddModelError(string.Empty, "Vui lòng nhập đầy đủ thông tin");
                 }
-
-
             }
             ModelState.AddModelError("", "Thao tác không hợp lệ. Vui lòng kiểm tra lại.");
             return RedirectToAction("Index", "Login");
@@ -78,21 +81,9 @@ namespace QA.TNGo_v2.Controllers
                     return RedirectToAction("Index", "Login");
                 }
 
-            }   
+            }
             return RedirectToAction("Index", "Login");
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         // GET: Login/Details/5
@@ -224,7 +215,7 @@ namespace QA.TNGo_v2.Controllers
             {
                 _context.Login.Remove(login);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -247,7 +238,7 @@ namespace QA.TNGo_v2.Controllers
 
         private bool LoginExists(int id)
         {
-          return (_context.Login?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Login?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

@@ -30,10 +30,23 @@
         button {
             color: white;
             background-color: #0090FF;
-            height: 35px;
-            width: 35px;
-            border: 1px solid gray;
+            height: 45px;
+            width: 45px;
+            border: 1px solid #d7d2d2;
         }
+        button:hover{
+            opacity: 0.7;
+            border: 1px solid white;
+            height: 43px;
+            width: 43px;
+        }
+
+            button:focus {
+                opacity: 0.5;
+                border: 1px solid #15b313;
+                height: 43px;
+                width: 43px;
+            }
     </style>
 }
 
@@ -110,8 +123,6 @@
                 paginationContainer.appendChild(pageButton);
             }
         }
-
-
         updatePagination();
     </script>
 }

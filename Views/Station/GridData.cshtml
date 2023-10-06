@@ -1,0 +1,68 @@
+﻿@* @using QA.TNGo_v2.Models;
+
+@model StationViewModel;
+
+@{
+    Layout = null;
+    var dataStation = Model?.data;
+}
+
+@if (Model == null)
+{
+    <div class="px-3 mb-2">
+        <h6 class="text-end"><i>Tìm thấy <span class="text-danger fw-bold">0</span> trạm xe</i></h6>
+    </div>
+}
+else
+{
+    <div class="px-3 mb-2">
+        <h6 class="text-end"><i>Tìm thấy <span class="text-success fw-bold">@Model.total</span> trạm xe</i></h6>
+    </div>
+
+    <div class="station-list">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+            @for (int i = 0; i < dataStation.Count; i++)
+            {
+                <div class="accordion-item">
+                    <h2 class="accordion-header sticky-top" id="panelsStayOpen-heading-@i">
+                        <button class="accordion-button @(i==0?"":"collapsed")" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse-@i" aria-expanded="@(i==0)" aria-controls="panelsStayOpen-collapse-@i">
+                            <strong>@dataStation[i]?.projectName.Replace("TNGO_TP", "")</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse-@i" class="accordion-collapse collapse @(i==0?"show":"")" aria-labelledby="panelsStayOpen-heading-@i">
+                        <div class="accordion-body p-0">
+
+                            <table class="table table-striped mb-0">
+                                <tbody>
+                                    @for (int j = 0; j < dataStation[i].stations.Count; j++)
+                                    {
+                                        <tr>
+                                            <td class="px-3">
+                                                <div><b>@dataStation[i].stations[j].Name</b></div>
+                                                <div>@dataStation[i].stations[j].Address</div>
+                                            </td>
+                                            <td class="text-end px-3 align-middle">
+                                                <i class="fa-solid fa-location-dot fa-xl station-marker" role="button" title="Đi tới"
+                                                   data-lat="@dataStation[i].stations[j].lat.ToString().Replace(",",".")"
+                                                   data-lng="@dataStation[i].stations[j].lng.ToString().Replace(",",".")"
+                                                   data-name="<div class='marker-title'>@dataStation[i].stations[j].Name</div><div>@dataStation[i].stations[j].Address</div>"
+                                                   data-id="@dataStation[i].stations[j].Id">
+                                                </i>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script>
+        moveToLocation(Number("@Model.lat"), Number("@Model.lng"));
+    </script>
+} *@
