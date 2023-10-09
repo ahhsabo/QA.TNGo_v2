@@ -23,6 +23,8 @@
     <link href="~/assets/css/app.min.css" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="~/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
 </head>
 
 <style>
@@ -211,7 +213,7 @@
                         <div class="dropdown ms-sm-3 header-item topbar-user">
                             <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                <img src="https://api-mobile.tngo.vn/Data/Account/2023/9/6/avt_5d950355-2deb-4d9d-8ca7-a8e1615a7e12.jpg" type="button" data-bs-toggle="dropdown" aria-expanded="false" alt="avatar" onerror="this.onerror=null;this.src='/Content/Admin/images/no-avatar.jpg';">
+                                <i class="fa-solid fa-user"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
@@ -324,7 +326,7 @@
                                         <a href="/Admin/Manager/Terms" class="nav-link" data-key="t-ecommerce"> Điều khoản sử dụng </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/Admin/Manager/ContactManager" class="nav-link" data-key="t-crypto">
+                                        <a href="/Admin/Manager/Contact" class="nav-link" data-key="t-crypto">
                                             Khách hàng liên hệ
                                         </a>
                                     </li>
@@ -406,6 +408,7 @@
     <!-- App js -->
     <script src="~/assets/js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 @Html.Partial("_Gallery")

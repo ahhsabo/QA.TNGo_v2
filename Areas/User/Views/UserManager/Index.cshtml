@@ -4,11 +4,8 @@
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Tài khoản</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -26,9 +23,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.UserName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PasswordHash)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Avatar)
@@ -59,20 +53,12 @@
                     @Html.DisplayFor(modelItem => item.UserName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.PasswordHash)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.Avatar)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.DisplayName)
                 </td>
-                <td>
-                    <a asp-controller="UserManager" asp-action="Create">Create</a> |
-                    <a asp-controller="UserManager" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-controller="UserManager" asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-controller="UserManager" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
+
             </tr>
         }
     </tbody>

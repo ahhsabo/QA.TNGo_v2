@@ -4,11 +4,9 @@
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>CÂU HỎI THƯỜNG GẶP</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -37,9 +35,8 @@
                 @Html.DisplayFor(modelItem => item.ParentId)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ID">Chỉnh sửa</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Xóa</a>
             </td>
         </tr>
 }

@@ -34933,10 +34933,6 @@
       "PackagePath": "staticwebassets\\image\\image\\20220727172455087_Xếp hạng banner.jpg"
     },
     {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\image\\20220930171157913_z3757313281131_a694b27e10b473e369b58299cf967472.jpg",
-      "PackagePath": "staticwebassets\\image\\image\\20220930171157913_z3757313281131_a694b27e10b473e369b58299cf967472.jpg"
-    },
-    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\image\\23_11.png",
       "PackagePath": "staticwebassets\\image\\image\\23_11.png"
     },
@@ -35103,6 +35099,10 @@
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\image\\Xe đạp HCM.jpg",
       "PackagePath": "staticwebassets\\image\\image\\Xe đạp HCM.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\image\\ketbanmoi.jpg",
+      "PackagePath": "staticwebassets\\image\\image\\ketbanmoi.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\QA.TNGo_v2\\wwwroot\\image\\image\\logo (1).jpg",
